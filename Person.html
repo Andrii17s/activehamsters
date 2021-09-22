@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Person</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Person</title>
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <div>
-        <label for="occupation">Діяльність:</label>
-
-        <select name="occupation" id="occupation" multiple>
-        <option value="school">Школяр</option>
-        <option value="student">Студент</option>
-        <option value="Work">Працює</option>
-        <option value="Pensionb">Пенсіонер</option>
-        </select>
-
-    </div>
-
+<div class="form bs">
+	<h3>Данні кандидата</h3>
+	<form action="#">
+		<label for="fname">Ім'я:</label>
+		<input type="text" id="fname" name="fname" class="mb">
+		<hr>
+		<label for="lname">Прізвище:</label>
+		<input type="text" id="lname" name="lname" class="mb">
+		<hr>
+		<label for="birthdate">Дата народження:</label>
+		<input type="date" id="birthdate" name="birthdate" class="mb">
+		<hr>
+		<label>Вивчав мову:</label><br>
+		<input type="radio" id="php" name="fav_language" value="HTML">
+		<label for="php">PHP</label><br>
+		<input type="radio" id="java" name="fav_language" value="Java" class="mb">
+		<label for="java">Java</label><br>
+		<input type="radio" id="python" name="fav_language" value="phyton" class="mb">
+		<label for="python">Python</label><br>
+		<input type="radio" id="javascript" name="fav_language" value="JavaScript" class="mb">
+		<label for="javascript">JavaScript</label>
+		<hr>
+		<label for="photo">Фото:</label>
+		<input type="file" id="photo" name="photo" class="mb">
+		<hr>
+		<label for="email">Електронна пошта:</label>
+		<input type="email" id="email" name="email" class="mb">
+		<hr>
+		<label>Освіта:</label><br>
+		<input type="checkbox" id="higher" name="higher" value="higher">
+		<label for="higher">Вища технічна</label><br>
+		<input type="checkbox" id="average" name="average" value="average">
+		<label for="average">Середня технічна</label><br>
+		<input type="checkbox" id="other" name="other" value="Boat">
+		<label for="other">Інше</label><br>
+		<hr>
+		<label for="quantity">Оцініть ваш рівень підготовки <br>(від 1 до 5):</label>
+		<input type="number" id="quantity" name="quantity" min="1" max="5">
+		<hr>
+		<label for="occupation">Діяльність:</label><br>
+		<select name="occupation" id="occupation" multiple>
+			<option value="student">Студент</option>
+			<option value="working">Працює</option>
+			<option value="retiree">Пенсіонер</option>
+		</select>
+		<input type="submit" value="Надіслати" class="mt">
+		<input type="reset">
+	</form>
+</div>
 </body>
+
