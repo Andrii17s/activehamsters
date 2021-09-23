@@ -20,7 +20,7 @@
 				<input type="text" id="surname" name="surname" value="" required> <br>
 				<label for="secondName">По батькові:</label> <br>
 				<input type="text" id="secondName" name="secondName" value=""> <br>
-				<label for="dateOfBirth">Виберіть дату народження</label>
+				<label for="dateOfBirth">Виберіть дату народження:</label>
 				<input type="date" id="dateOfBirth" name="dateOfBirth">
 			</form>	
 		</fieldset>	<br>
@@ -62,7 +62,7 @@
 
 		<fieldset>
 			<form action="#">
-				<legend>Контактні дані</legend>
+				<legend>Контактні дані:</legend> 
 				<label for="tel">Номер телефону</label> <br>
 				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <br>
 				<label for="email">Email</label> <br>
@@ -70,6 +70,7 @@
 			</form>
 		</fieldset> 
 		<hr>
+
 		<label>Освіта:</label><br>
 		<input type="checkbox" id="higher" name="higher" value="higher">
 		<label for="higher">Вища технічна</label><br>
@@ -86,9 +87,19 @@
 			<option value="student">Студент</option>
 			<option value="working">Працює</option>
 			<option value="retiree">Пенсіонер</option>
-		</select> <br>
+		</select> <hr>
+
+		<label for="engLevel">Рівень Англійської мови:</label>
+		<input list="engLevel" name="engLevel">
+		<datalist id="engLevel">
+			<option value="Elementary (A1)">
+			<option value="Pre intermediate (A2)">
+			<option value="Intermediate (B1)">
+			<option value="Upper intermediate (B2) ">
+			<option value="Advanced (C1)">
+		</datalist> <br>
 		<input type="submit" value="Надіслати" class="mt">
-		<input type="reset">
+		<input type="reset" value="Очистити поля">
 	</form>
 </div>
 </body>
