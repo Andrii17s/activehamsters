@@ -5,7 +5,13 @@ body {
 	text-align: center;
 	background-color: darkcyan;
 	font-style: italic;
+	background: url('https://image.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg') center center/cover no-repeat;
 }
+
+select {
+	width: 175px;
+}
+
 
 .form {
 	display: inline-block;
@@ -16,11 +22,10 @@ body {
 	margin-top: 20px;
 	border-radius: 5px;
 	padding: 20px;
+	width: 350px;
 	text-align: left;
-}
-
-select {
-	width: 175px;
+	background-color: darkcyan;
+	
 }
 
 .mb {

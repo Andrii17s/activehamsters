@@ -7,89 +7,105 @@
 </head>
 <body>
 <div class="form">
-	<h3>Данні кандидата на курс React</h3>
+	<h3>Данні кандидата</h3>
 	<form action="#">
-		<label for="fname">Ім'я:</label>
-		<input type="text" id="fname" name="fname" class="mb in"/>
-		<hr/>
-		<label for="lname">Прізвище:</label>
-		<input type="text" id="lname" name="lname" class="mb in"/>
-		<hr/>
-		<label for="birthdate">Дата народження:</label>
-		<input type="date" id="birthdate" name="birthdate" class="mb in"/>
-		<hr/>
-		<label for="photo">Фото:</label>
-		<input type="file" id="photo" name="photo" class="mb in"/>
-		<hr/>
-		<label for="email">Електронна пошта:</label><br/>
-		<input type="email" id="email" name="email" class="mb in"/>
-		<hr/>
-		<label for="phone">Номер телефону:</label><br/>
-		<input type="tel" id="phone" name="phone" class="mb in"/>
-		<hr/>
-		<label>Освіта:</label><br/>
-		<input type="checkbox" id="higher" name="higher" value="higher"/>
-		<label for="higher">Вища технічна</label><br/>
-		<input type="checkbox" id="average" name="average" value="average"/>
-		<label for="average">Середня технічна</label><br/>
-		<input type="checkbox" id="other" name="other" value="Boat"/>
-		<label for="other">Інше</label><br/>
-		<hr/>
-		<label>Вивчав мову:</label><br/>
-		<input type="radio" id="php" name="fav_language" value="HTML"/>
-		<label for="php">PHP</label><br/>
-		<input
-			type="radio"
-			id="java"
-			name="fav_language"
-			value="Java"
-			class="mb"
-		/>
-		<label for="java">Java</label><br/>
-		<input
-			type="radio"
-			id="python"
-			name="fav_language"
-			value="phyton"
-			class="mb"
-		/>
-		<label for="python">Python</label><br/>
-		<input
-			type="radio"
-			id="javascript"
-			name="fav_language"
-			value="JavaScript"
-			class="mb"
-		/>
+
+		<fieldset>	
+			<form>
+				<legend>П.І.Б</legend>
+				<label for="firstName">Ім'я:</label> <br>
+				<input type="text" id="firstName" name="firstName" value="" required> <br>
+				<label for="surname">Прізвище:</label> <br>
+				<input type="text" id="surname" name="surname" value="" required> <br>
+				<label for="secondName">По батькові:</label> <br>
+				<input type="text" id="secondName" name="secondName" value=""> <br>
+				<label for="dateOfBirth">Виберіть дату народження:</label>
+				<input type="date" id="dateOfBirth" name="dateOfBirth">
+			</form>	
+		</fieldset>	<br>
+
+		<fieldset class="mb">
+			<legend>Данні про місце проживання</legend>
+			<form action="#">
+				<label for="yourCountry">Країна проживання </label>
+				<select name="yourCountry" id="yourCountry" class="mb">
+					<option value="Ukraine">Україна</option>
+					<option value="USA">США</option>
+					<option value="Georgia">Грузія</option>
+					<option value="null" disabled>...</option>
+				</select> <br>
+				<label for="state" class="mb">Область</label><br>	
+				<input type="text" id="state" name="state" ><br> 	
+				<label for="district">Район</label>	<br>
+				<input type="text" id="district" name="district" >	<br>
+				<label for="build">Будинок(корпус)</label>	<br>	
+				<input type="text" id="build" name="build">	<br>
+				<label for="numOfHouse">№ будинку/квартири</label>	
+				<input type="text" id="numOfHouse" name="numOfHouse">
+			</form>
+		</fieldset> 
+
+		<label>Вивчав мову:</label><br>
+		<input type="radio" id="php" name="fav_language" value="HTML" >
+		<label for="php">PHP</label><br>
+		<input type="radio" id="java" name="fav_language" value="Java" class="mb">
+		<label for="java">Java</label><br>
+		<input type="radio" id="python" name="fav_language" value="phyton" class="mb">
+		<label for="python">Python</label><br>
+		<input type="radio" id="javascript" name="fav_language" value="JavaScript" class="mb">
 		<label for="javascript">JavaScript</label>
-		<hr/>
-		<label for="github">Лінк на GitHub(якщо маєте):</label><br/>
+		<hr>
+    <label for="github">Лінк на GitHub(якщо маєте):</label><br/>
 		<input type="url" id="github" name="github" class="mb in"/>
 		<hr/>
-		<label for="quantity"
-		>Оцініть ваш рівень підготовки <br/>(від 1 до 5):</label
-		>
-		<input
-			type="number"
-			id="quantity"
-			name="quantity"
-			min="1"
-			max="5"
-			class="mb in"
-		/>
-		<hr/>
-		<label for="occupation">Діяльність:</label><br/>
+		<label for="photo">Фото:</label>
+		<input type="file" id="photo" name="photo" class="mb">
+		<hr>
+
+		<fieldset>
+			<form action="#">
+				<legend>Контактні дані:</legend> 
+				<label for="tel">Номер телефону</label> <br>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <br>
+				<label for="email">Email</label> <br>
+				<input type="email" id="email" name="email">
+			</form>
+		</fieldset> 
+		<hr>
+
+		<label>Освіта:</label><br>
+		<input type="checkbox" id="higher" name="higher" value="higher">
+		<label for="higher">Вища технічна</label><br>
+		<input type="checkbox" id="average" name="average" value="average">
+		<label for="average">Середня технічна</label><br>
+		<input type="checkbox" id="other" name="other" value="Boat">
+		<label for="other">Інше</label><br>
+		<hr>
+		<label for="quantity">Оцініть ваш рівень підготовки <br>(від 1 до 5):</label>
+		<input type="number" id="quantity" name="quantity" min="1" max="5">
+		<hr>
+		<label for="occupation">Діяльність:</label><br>
 		<select name="occupation" id="occupation" multiple>
 			<option value="student">Студент</option>
 			<option value="working">Працює</option>
 			<option value="retiree">Пенсіонер</option>
-		</select>
-		<hr/>
+		</select> <hr>
+
+		<label for="engLevel">Рівень Англійської мови:</label>
+		<input list="engLevel" name="engLevel">
+		<datalist id="engLevel">
+			<option value="Elementary (A1)">
+			<option value="Pre intermediate (A2)">
+			<option value="Intermediate (B1)">
+			<option value="Upper intermediate (B2) ">
+			<option value="Advanced (C1)">
+		</datalist> <br>
+    <hr/>
 		<label for="about">Коротко про себе:</label><br/>
 		<textarea id="about" name="about" rows="5" cols="40"></textarea>
 		<hr/>
-		<input type="submit" value="Надіслати" class="btn mt"/>
-		<input type="reset" class="btn"/>
+		<input type="submit" value="Надіслати" class="mt">
+		<input type="reset" value="Очистити поля">
 	</form>
 </div>
 </body>
