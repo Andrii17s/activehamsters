@@ -2,14 +2,20 @@ body {
 	font-family: 'Arial Rounded MT Bold', sans-serif;
 	font-size: 17px;
 	color: white;
+	text-align: center;
 	background-color: darkcyan;
 	font-style: italic;
 }
 
 .form {
+	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 300px;
+	min-height: 100vh;
+	box-shadow: rgba(0, 0, 0, 0.75) 0 5px 15px;
+	margin-top: 20px;
+	border-radius: 5px;
+	padding: 20px;
 	text-align: left;
 }
 
@@ -26,8 +32,27 @@ select {
 }
 
 .bs {
-	box-shadow: rgba(0, 0, 0, 0.75) 0 5px 15px;
-	margin-top: 20px;
+	box-shadow: rgba(0, 0, 0, 0.95) 0 5px 15px;
+	margin-top: 10px;
 	border-radius: 5px;
-	padding: 20px;
+	padding: 15px;
+}
+
+.btn {
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.in {
+	box-shadow: rgba(0, 0, 0, 0.75) 0 5px 15px;
+	height: 20px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.btn:hover {
+	background: rgba(0, 0, 0, 0);
+	color: white;
+	box-shadow: inset 0 0 0 3px #3a7999;
 }
