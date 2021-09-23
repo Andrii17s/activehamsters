@@ -6,20 +6,48 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="form bs">
 	<h3>Данні кандидата</h3>
 	<form action="#">
-		<label for="fname">Ім'я:</label>
-		<input type="text" id="fname" name="fname" class="mb">
-		<hr>
-		<label for="lname">Прізвище:</label>
-		<input type="text" id="lname" name="lname" class="mb">
-		<hr>
-		<label for="birthdate">Дата народження:</label>
-		<input type="date" id="birthdate" name="birthdate" class="mb">
-		<hr>
+
+		<fieldset>	
+			<form>
+				<legend>П.І.Б</legend>
+				<label for="firstName">Ім'я:</label> <br>
+				<input type="text" id="firstName" name="firstName" value="" required> <br>
+				<label for="surname">Прізвище:</label> <br>
+				<input type="text" id="surname" name="surname" value="" required> <br>
+				<label for="secondName">По батькові:</label> <br>
+				<input type="text" id="secondName" name="secondName" value=""> <br>
+				<label for="dateOfBirth">Виберіть дату народження</label>
+				<input type="date" id="dateOfBirth" name="dateOfBirth">
+			</form>	
+		</fieldset>	<br>
+
+		<fieldset class="mb">
+			<legend>Данні про місце проживання</legend>
+			<form action="#">
+				<label for="yourCountry">Країна проживання </label>
+				<select name="yourCountry" id="yourCountry" class="mb">
+					<option value="Ukraine">Україна</option>
+					<option value="USA">США</option>
+					<option value="Georgia">Грузія</option>
+					<option value="null" disabled>...</option>
+				</select> <br>
+				<label for="state" class="mb">Область</label><br>	
+				<input type="text" id="state" name="state" ><br> 	
+				<label for="district">Район</label>	<br>
+				<input type="text" id="district" name="district" >	<br>
+				<label for="build">Будинок(корпус)</label>	<br>	
+				<input type="text" id="build" name="build">	<br>
+				<label for="numOfHouse">№ будинку/квартири</label>	
+				<input type="text" id="numOfHouse" name="numOfHouse">
+			</form>
+		</fieldset> 
+
 		<label>Вивчав мову:</label><br>
-		<input type="radio" id="php" name="fav_language" value="HTML">
+		<input type="radio" id="php" name="fav_language" value="HTML" >
 		<label for="php">PHP</label><br>
 		<input type="radio" id="java" name="fav_language" value="Java" class="mb">
 		<label for="java">Java</label><br>
@@ -31,8 +59,16 @@
 		<label for="photo">Фото:</label>
 		<input type="file" id="photo" name="photo" class="mb">
 		<hr>
-		<label for="email">Електронна пошта:</label>
-		<input type="email" id="email" name="email" class="mb">
+
+		<fieldset>
+			<form action="#">
+				<legend>Контактні дані</legend>
+				<label for="tel">Номер телефону</label> <br>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <br>
+				<label for="email">Email</label> <br>
+				<input type="email" id="email" name="email">
+			</form>
+		</fieldset> 
 		<hr>
 		<label>Освіта:</label><br>
 		<input type="checkbox" id="higher" name="higher" value="higher">
@@ -50,7 +86,7 @@
 			<option value="student">Студент</option>
 			<option value="working">Працює</option>
 			<option value="retiree">Пенсіонер</option>
-		</select>
+		</select> <br>
 		<input type="submit" value="Надіслати" class="mt">
 		<input type="reset">
 	</form>
