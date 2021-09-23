@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"/>
 	<title>Person</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
-<div class="form bs">
+<div class="form">
 	<h3>Данні кандидата</h3>
 	<form action="#">
 
@@ -56,6 +55,9 @@
 		<input type="radio" id="javascript" name="fav_language" value="JavaScript" class="mb">
 		<label for="javascript">JavaScript</label>
 		<hr>
+    <label for="github">Лінк на GitHub(якщо маєте):</label><br/>
+		<input type="url" id="github" name="github" class="mb in"/>
+		<hr/>
 		<label for="photo">Фото:</label>
 		<input type="file" id="photo" name="photo" class="mb">
 		<hr>
@@ -98,9 +100,14 @@
 			<option value="Upper intermediate (B2) ">
 			<option value="Advanced (C1)">
 		</datalist> <br>
+    <hr/>
+		<label for="about">Коротко про себе:</label><br/>
+		<textarea id="about" name="about" rows="5" cols="40"></textarea>
+		<hr/>
 		<input type="submit" value="Надіслати" class="mt">
 		<input type="reset" value="Очистити поля">
 	</form>
 </div>
 </body>
+</html>
 
