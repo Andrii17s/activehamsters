@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itgroup name="activehamsters">
+	<person>
+		<firstname>Андрій</firstname>
+		<lastname>Щепак</lastname>
+		<email>k27pine@gmail.com</email>
+		<residence>м.Київ</residence>
+		<info>Python</info>
+	</person>
+	<person>
+		<firstname>Севастян</firstname>
+		<lastname>Когут</lastname>
+		<email>sev4yk89@gmail.com</email>
+		<residence>с.Нововодяне, Запорізька обл.</residence>
+		<info>новачок</info>
+	</person>
+	<person>
+		<firstname>Олексій</firstname>
+		<lastname>Федоренко</lastname>
+		<email>alavir.7w@gmail.com</email>
+		<residence>м.Миколаїв</residence>
+		<info>JS, Node js, React</info>
+	</person>
+	<person>
+		<firstname>Євген</firstname>
+		<lastname>Горлов</lastname>
+		<email>aevgenii.gorlov@gmail.com</email>
+		<residence>м.Запоріжжя</residence>
+		<info>новачок</info>
+	</person>
+	<person>
+		<firstname>Володимир</firstname>
+		<lastname>Опанасюк</lastname>
+		<email>opanasiukvlad@gmail.com</email>
+		<residence>м.Київ</residence>
+		<info>новачок</info>
+	</person>
+	<person>
+		<firstname>Олександр</firstname>
+		<lastname>Задорожний</lastname>
+		<email>zadorozny509@gmail.com</email>
+		<residence>с.Білозерне, Кіровоградська обл.</residence>
+		<info>новачок</info>
+	</person>
+</itgroup>
