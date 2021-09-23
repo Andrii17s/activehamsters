@@ -2,19 +2,22 @@ body {
 	font-family: 'Arial Rounded MT Bold', sans-serif;
 	font-size: 17px;
 	color: white;
-	background-color: darkcyan;
 	font-style: italic;
-}
-
-.form {
-	margin-left: auto;
-	margin-right: auto;
-	width: 300px;
-	text-align: left;
+	background: url('https://image.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg') center center/cover no-repeat;
 }
 
 select {
 	width: 175px;
+}
+
+
+.form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+	text-align: left;
+	background-color: darkcyan;
+	
 }
 
 .mb {
