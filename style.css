@@ -1,3 +1,33 @@
 body {
-    background-color: aquamarine;
+	font-family: 'Arial Rounded MT Bold', sans-serif;
+	font-size: 17px;
+	color: white;
+	background-color: darkcyan;
+	font-style: italic;
+}
+
+.form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	text-align: left;
+}
+
+select {
+	width: 175px;
+}
+
+.mb {
+	margin-bottom: 10px;
+}
+
+.mt {
+	margin-top: 10px;
+}
+
+.bs {
+	box-shadow: rgba(0, 0, 0, 0.75) 0 5px 15px;
+	margin-top: 20px;
+	border-radius: 5px;
+	padding: 20px;
 }
