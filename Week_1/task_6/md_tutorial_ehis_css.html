@@ -4,75 +4,56 @@
 <head>
     <meta charset="UTF-8" />
     <title>Туторіал</title>
-    <style>
-        .ul_none {
-            list-style-type: none;
-        }
-        table {
-            width: 50%;
-            border: 2px solid rgb(0, 153, 255);
-            border-collapse: collapse;
-        }
-
-        th {
-            padding: 5px;
-            border: 1px solid rgb(0, 153, 255);
-        }
-
-        td {
-            padding: 5px;
-            border: 1px solid rgb(0, 153, 255);
-        } 
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
+<!--Body-->
 <body>
-    <h1>Основний синтаксис Markdown</h1>
-    <header id="nav">
-        <h3>Навігація</h3>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#Headings">Заголовки</a></li>
-                    <li><a href="#Paragraphs">Абзаци</a></li>
-                    <li><a href="#Line_Breaks">Розриви рідків</a></li>
-                    <li>
-                        <a href="#Lists">Списки</a>
-                        <ul>
-                            <li><a href="#Ordered_Lists">Впорядковані</a></li>
-                            <li><a href="#Unordered_Lists">Невпорядковані</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#Emphasis">Акценти</a>
-                        <ul>
-                            <li><a href="#bold">Жирний</a></li>
-                            <li><a href="#italic">Курсив</a></li>
-                            <li><a href="#bold_and_italic">Жирний та курсив</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#Blockquotes">Блок-цитати</a>
-                        <ul>
-                            <li>
-                                <a href="#Blockquotes_Multiple">Цитати з кількома абзацами</a>
-                            </li>
-                            <li><a href="#Nested_Blockquotes">Вкладені цитати</a></li>
-                            <li>
-                                <a href="#Other_Elements">Цитати з іншими елементами</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#Links">Посилання</a></li>
-                    <li><a href="#Images">Зображення</a></li>
-                </ul>
-            </nav>
+    <!--Header-->
+    <header>
+        <div class="headerImg">
+            <img src="images/it_bro.png" alt="it_bro" width="104" height="142">
         </div>
     </header>
-    <main>
-        <!--Заголовки-->
+    <header>
+        <div class="header">
+            <h1 class="H1">Основний синтаксис Markdown</h1>
+        </div>
+    </header>
+    <!--Right Sidebar-->
+    <aside class="left_sidebar">
+        <nav>
+            <ul class="ul_none">
+                <li><a href="#Headings">Заголовки</a></li>
+                <li><a href="#Paragraphs">Абзаци</a></li>
+                <li><a href="#Line_Breaks">Розриви рідків</a></li>
+                <li><a href="#Lists">Списки</a>
+                <li><a href="#Ordered_Lists">Впорядковані</a></li>
+                <li><a href="#Unordered_Lists">Невпорядковані</a></li>
+                <li><a href="#Emphasis">Акценти</a></li>
+                <li><a href="#bold">Жирний</a></li>
+                <li><a href="#italic">Курсив</a></li>
+                <li><a href="#bold_and_italic">Жирний та курсив</a></li>
+                <li><a href="#Blockquotes">Блок-цитати</a>
+                <li><a href="#Blockquotes_Multiple">Цитати з кількома абзацами</a></li>
+                <li><a href="#Nested_Blockquotes">Вкладені цитати</a></li>
+                <li><a href="#Other_Elements">Цитати з іншими елементами</a></li>
+                <li><a href="#Links">Посилання</a></li>
+                <li><a href="#Images">Зображення</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section class="main_container">
+        <!--Горизотальні лінії-->
         <div>
-            <h3 id="Headings">Заголовки</h3>
+        <hr/ class="line">
+        </div>
+         <!--Заголовки-->
+            <h3 align="center" id="Headings">Заголовки</h3>
+        <hr/ class="line">   
             <p>
                 Щоб створити заголовок, додайте цифри (<code>#</code>) перед словом
                 або фразою. <br> Кількість цифрових знаків, які ви використовуєте, має
@@ -158,10 +139,11 @@
                 </tbody>
             </table>
         </div>
-        <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
+        <hr/ class="line">
         <!--Абзац-->
         <div>
-            <h3 id="Paragraphs">Абзац</h3>
+            <h3 align="center" id="Paragraphs">Абзац</h3>
+            <hr/ class="line">    
             <p>
                 Для створення абзаців використовуйте порожній рядок, щоб відокремити
                 один або кілька рядків тексту.
@@ -206,10 +188,12 @@
                 </tbody>
             </table>
         </div>
-        <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
+        
         <!--Розрив рядків-->
+        <hr/ class="line">
         <div>
-            <h3 id="Line_Breaks">Розриви рядків</h3>
+            <h3 align="center" id="Line_Breaks">Розриви рядків</h3>
+        <hr/ class="line">
             <p>
                 Щоб створити розрив рядка (<code>&lt;br&gt;</code>), завершіть рядок
                 двома або більше пробілами, а потім введіть <code>return</code>.
@@ -260,17 +244,22 @@
                 </tbody>
             </table>
         </div>
-        <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
+        
+        
         <!--Списки-->
+        <hr/ class="line">
         <div>
-            <h3 id="Lists">Списки</h3>
+            <h3 align="center" id="Lists">Списки</h3>
+        <hr/ class="line">
             <p>
                 Ви можете впорядкувати елементи в упорядковані та невпорядковані
                 списки.
             </p>
             <!--Упорядковані списки-->
+            <hr/ class="line">
             <div>
-                <h4 id="Ordered_Lists">Упорядковані списки</h4>
+                <h4 align="center" id="Ordered_Lists">Упорядковані списки</h4>
+            <hr/ class="line">   
                 <p>
                     Щоб створити упорядкований список, додайте рядки -позиції з
                     номерами, за якими йдуть крапки. <br> Цифри не обов’язково повинні бути в
@@ -416,10 +405,11 @@
                     </tbody>
                 </table>
             </div>
-            <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
             <!--Невпорядковані списки-->
+            <hr/ class="line">
             <div>
-                <h4 id="Unordered_Lists">Невпорядковані списки</h4>
+                <h4 align="center" id="Unordered_Lists">Невпорядковані списки</h4>
+            <hr/ class="line">
                 <p>
                     Щоб створити невпорядкований список, додайте тире (<code>-</code>),
                     зірочки (<code>*</code>) або знаки плюс (<code>+</code>) перед
@@ -567,14 +557,19 @@
                 </table>
             </div>
         </div>
-        <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
+        
         <!--Акценти-->
+        <hr/ class="line">
         <div>
-            <h2 id="Emphasis">Акценти</h2>
+            <h2 align="center" id="Emphasis">Акценти</h2>
+        <hr/ class="line">    
             <p>Ви можете додати наголос, зробивши текст жирним або курсивом.</p>
             <!--Жирний-->
+
             <div>
-                <h3 id="bold">Жирний</h3>
+                <hr/ class="line">
+                <h3 align="center" id="bold">Жирний</h3>
+                <hr/ class="line">
                 <p>
                     Щоб виділити жирний текст, додайте дві зірочки або підкреслення
                     перед і після слова чи фрази.<br />
@@ -606,10 +601,11 @@
                     </thead>
                 </table>
             </div>
-            <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
             <!--Курсив-->
             <div>
-                <h3 id="italic">Курсив</h3>
+                <hr/ class="line">
+                <h3 align="center" id="italic">Курсив</h3>
+                <hr/ class="line">
                 <p>
                     Щоб виділити курсивом текст, додайте одну зірочку або підкреслення
                     перед і після слова чи фрази. <br>
@@ -641,10 +637,11 @@
                     </thead>
                 </table>
             </div>
-            <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
             <!--Жирний тв курсив-->
             <div>
-                <h3 id="bold_and_italic">Жирний та курсив</h3>
+                <hr/ class="line">
+                <h3 align="center" id="bold_and_italic">Жирний та курсив</h3>
+                <hr/ class="line">
                 <p>
                     Щоб виділити текст жирним і курсивом одночасно, додайте три зірочки
                     або підкреслення перед і після слова чифрази.
@@ -709,13 +706,14 @@
                 </table>
             </div>
         </div>
-        <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
+        
         <!--Цитати-->
         <div>
             <!--Блок цитати-->
             <div>
-                <h2 id="Blockquotes">Блок-цитати</h2>
-
+                <hr/ class="line">
+                <h2 align="center" id="Blockquotes">Блок-цитати</h2>
+                <hr/ class="line">
                 <p>Щоб створити цитату, додайте > перед абзацом</p>
                 <code>>Не вірю у силу слова я, а вірю в силу пі*дюлей.</code>
                 <p>Виведений результат виглядає так:</p>
@@ -723,10 +721,11 @@
                     <p>Не вірю у силу слова я, а вірю в силу пі*дюлей.</p>
                 </blockquote>
             </div>
-            <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
             <!--Цитати з кілкома абзацами-->
+            <hr/ class="line">
             <div>
-                <h3 id="Blockquotes_Multiple">Цитати з кількома абзацами</h3>
+                <h3 align="center" id="Blockquotes_Multiple">Цитати з кількома абзацами</h3>
+            <hr/ class="line">
                 <p>
                     Блок - цитати можуть містити кілька абзаців. Додайте > до порожніх
                     рядків між абзацами.
@@ -743,10 +742,11 @@
                     <p>Покайтесь, браття, i не робiть х*йнi!</p>
                 </blockquote>
             </div>
-            <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
             <!--Вкладені цитати-->
+            <hr/ class="line">
             <div>
-                <h3 id="Nested_Blockquotes">Вкладені цитати</h3>
+                <h3 align="center" id="Nested_Blockquotes">Вкладені цитати</h3>
+            <hr/ class="line">    
                 <p>
                     Блок-цитати можуть бути вкладеними. Додайте >>перед абзацом, який
                     потрібно вставити.
@@ -765,10 +765,11 @@
                     </blockquote>
                 </blockquote>
             </div>
-            <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
             <!--Цитати з Іншими елемаентами-->
+            <hr/ class="line">
             <div>
-                <h3 id="Other_Elements">Цитати з іншими елементами</h3>
+                <h3 align="center" id="Other_Elements">Цитати з іншими елементами</h3>
+            <hr/ class="line">    
                 <p>
                     Блок -цитати можуть містити інші елементи у форматі Markdown. <br>
                     Не всі елементи можна використовувати - вам доведеться
@@ -800,10 +801,12 @@
                 </div>
             </div>
         </div>
-        <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
+        
         <!--Посилання-->
+        <hr/ class="line">
         <div>
-            <h2 id="Links">Посилання</h2>
+            <h2 align="center" id="Links">Посилання</h2>
+        <hr/ class="line">    
             <p>Markdown підтримує два типи оформлення посилань:</p>
             <ul>
                 <li>
@@ -825,10 +828,12 @@
                 Вояки для ваших IT проєктів <a href="https://itbro.pro/">IT BRO</a>
             </p>
         </div>
-        <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
+        
         <!--Зображення-->
+        <hr/ class="line">
         <div>
-            <h3 id="Images">Зображення</h3>
+            <h3 align="center" id="Images">Зображення</h3>
+            <hr/ class="line">    
             <p>
                 Щоб додати зображення, додайте знак оклику ( !), а потім
                 альтернативний текст у квадратних дужках, <br />
@@ -844,8 +849,12 @@
                 <img width="500" src="https://kept.com.ua/image/9cx/video_image-3ntrP_xTfg.jpeg" alt="Падме мем" />
             </p>
         </div>
-        <a href="#nav" title="Навігація"><img src="https://kept.com.ua/image/9dm/1.png" alt="Навігація" width="35">Навігація</a>
-    </main>
+    </section>
+    <footer class="footer">
+        <div>
+            <p>made by <a href="https://github.com/Andrii17s/activehamsters.git">activehamsters</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>
