@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
 	<meta charset="UTF-8"/>
 	<title>Person</title>
@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="form">
-	<h3>Данні кандидата</h3>
+	<h3>Данні кандидата</h3> <input type="image" src="it_bro.png" alt="main page" width="48" height="48">
 	<form action="#">
 
 		<fieldset>	
@@ -42,6 +42,15 @@
 				<input type="text" id="build" name="build" class="mb in">	<br>
 				<label for="numOfHouse">№ будинку/квартири</label>	
 				<input type="text" id="numOfHouse" name="numOfHouse" class="mb in">
+				<br>
+				<label for="site-search">Найближчий виборчий участок:</label>
+				<input type="search" id="search" name="q"
+       				aria-label="Пошук">
+				<button>Пошук</button>
+				<label for="appt">Бажаний час волевиявлення:</label>
+				<input type="time" id="time" name="time"
+       				min="08:00" max="20:00" required>
+
 			</form>
 		</fieldset> 
 
@@ -61,6 +70,8 @@
 		<label for="photo">Фото:</label>
 		<input type="file" id="photo" name="photo" class="mb">
 		<hr>
+		<label for="color">Оберіть улюблений колір</label>
+		<input type="color" id="color" name="color" value=""black">
 
 		<fieldset>
 			<form action="#">
@@ -81,6 +92,13 @@
 		<input type="checkbox" id="other" name="other" value="Boat" class="mb in">
 		<label for="other">Інше</label><br>
 		<hr>
+		<p>Досвід роботи:</p>
+		<div>
+  		<input type="range" id="xp" name="xp"
+        	 min="0" max="10">
+ 		<label for="xp">10</label>
+
+		</div>
 		<label for="quantity">Оцініть ваш рівень підготовки <br>(від 1 до 5):</label>
 		<input type="number" id="quantity" name="quantity" min="1" max="5" class="mb in">
 		<hr>
@@ -100,12 +118,32 @@
 			<option value="Upper intermediate (B2) ">
 			<option value="Advanced (C1)">
 		</datalist> <br>
+
+		<label for="meeting-time">Оберіть зручний час співбесіди:</label>
+		<input type="datetime-local" id="meeting-time"
+        	name="meeting-time" value="2021-09-26T19:30"
+        	min="2021-09-26T18:00" max="2021-09-31T00:00">
+		<br>
+		<label for="month">Бажаний час відпустки:</label>
+		<input type="month">	
+		<br>
+		<label for="week">Тиждень останньої флюрографіїх:</label>
+		<input type="week" id="camp-week"
+        	min="2021-W1" max="2021-W52" required>
     <hr/>
 		<label for="about">Коротко про себе:</label><br/>
 		<textarea id="about" name="about" rows="5" cols="40"></textarea>
 		<hr/>
+		<div>
+			<label for="pass">Секретний пароль:</label>
+			<input type="password" id="pass" name="password"
+				   minlength="3" required>
+		</div>
 		<input type="submit" value="Надіслати" class="mt">
+		<input type="button" value="Зберегти">
 		<input type="reset" value="Очистити поля">
+
+		<input type="hidden" id="hello" name="hello" value="Вітаєто у activeHamsters!">
 	</form>
 </div>
 </body>
