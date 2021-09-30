@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itgroup name="activehamsters">
+    <person>
+        <firstname>Андрій</firstname>
+        <lastname>Щепак</lastname>
+        <email>k27pine@gmail.com</email>
+        <residence>м. Київ</residence>
+        <info>Python</info>
+        <gitlink>https://github.com/Andrii17s</gitlink>
+    </person>
+    <person>
+        <firstname>Севастян</firstname>
+        <lastname>Когут</lastname>
+        <email>sev4yk89@gmail.com</email>
+        <residence>с. Нововодяне, Запорізька обл.</residence>
+        <info>новачок</info>
+        <gitlink>https://github.com/sev4yk</gitlink>
+    </person>
+    <person>
+        <firstname>Олексій</firstname>
+        <lastname>Федоренко</lastname>
+        <email>alavir.7w@gmail.com</email>
+        <residence>м. Миколаїв</residence>
+        <info>JS, Node js, React</info>
+        <gitlink>https://github.com/alavir-ua</gitlink>
+    </person>
+    <person>
+        <firstname>Євген</firstname>
+        <lastname>Горлов</lastname>
+        <email>aevgenii.gorlov@gmail.com</email>
+        <residence>м. Запоріжжя</residence>
+        <info>новачок</info>
+        <gitlink>https://github.com/Skelden</gitlink>
+    </person>
+    <person>
+        <firstname>Володимир</firstname>
+        <lastname>Опанасюк</lastname>
+        <email>opanasiukvlad@gmail.com</email>
+        <residence>м. Київ</residence>
+        <info>новачок</info>
+        <gitlink>https://github.com/opanasiukvlad</gitlink>
+    </person>
+    <person>
+        <firstname>Олександр</firstname>
+        <lastname>Задорожний</lastname>
+        <email>zadorozny509@gmail.com</email>
+        <residence>с. Білозерне, Кіровоградська обл.</residence>
+        <info>новачок</info>
+        <gitlink>https://github.com/Zaletny555</gitlink>
+    </person>
+    <person>
+        <firstname>Сергій</firstname>
+        <lastname>Ощепков</lastname>
+        <email>szwrrr23@gmail.com</email>
+        <residence>м. Миколаїв</residence>
+        <info>Трохи знаю  html, css</info>
+        <gitlink>https://github.com/SerhiiOshchepkov</gitlink>
+    </person>
+    <person>
+        <firstname>Володимир</firstname>
+        <lastname>Гера</lastname>
+        <email>heravolodymyr1991@gmail.com</email>
+        <residence>м. Лвів</residence>
+        <info>новачок, трохи знаю Java</info>
+        <gitlink>https://github.com/HeraVolodya</gitlink>
+    </person>
+    <person>
+        <firstname>Руслан</firstname>
+        <lastname>Загребельний</lastname>
+        <email>gtabtr12@gmail.com</email>
+        <residence>м. Миргород</residence>
+        <info>вивчав пітон по курсах, html</info>
+        <gitlink></gitlink>
+    </person>
+    <person>
+        <firstname>Олег</firstname>
+        <lastname>Тарасов</lastname>
+        <email>tarasov.oleg88@gmail.com</email>
+        <residence>м. Київ</residence>
+        <info>Трохи знаю пітон, трохи html з css</info>
+        <gitlink>https://github.com/legoTarasov</gitlink>
+    </person>
+    <person>
+        <firstname>Олексій</firstname>
+        <lastname>Ганзій</lastname>
+        <email>aleksey.ganzy@gmail.com</email>
+        <residence>м. Харків (зараз тимчасово в Англії)</residence>
+        <info>Трохи знав колись html та css</info>
+        <gitlink>https://github.com/Oleksii-Hanzii</gitlink>
+    </person>
+</itgroup>

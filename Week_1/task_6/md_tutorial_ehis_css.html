@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Туторіал</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--Body-->
+<body>
+    <!--Header-->
+    <header>
+        <div class="headerImg">
+            <img src="images/it_bro.png" alt="it_bro" width="104" height="142">
+        </div>
+    </header>
+    <header>
+        <div class="header">
+            <h1 class="H1">Основний синтаксис Markdown</h1>
+        </div>
+    </header>
+    <!--Right Sidebar-->
+    <aside class="left_sidebar">
+        <nav>
+            <ul class="ul_none">
+                <li><a href="#Headings">Заголовки</a></li>
+                <li><a href="#Paragraphs">Абзаци</a></li>
+                <li><a href="#Line_Breaks">Розриви рідків</a></li>
+                <li><a href="#Lists">Списки</a>
+                <li><a href="#Ordered_Lists">Впорядковані</a></li>
+                <li><a href="#Unordered_Lists">Невпорядковані</a></li>
+                <li><a href="#Emphasis">Акценти</a></li>
+                <li><a href="#bold">Жирний</a></li>
+                <li><a href="#italic">Курсив</a></li>
+                <li><a href="#bold_and_italic">Жирний та курсив</a></li>
+                <li><a href="#Blockquotes">Блок-цитати</a>
+                <li><a href="#Blockquotes_Multiple">Цитати з кількома абзацами</a></li>
+                <li><a href="#Nested_Blockquotes">Вкладені цитати</a></li>
+                <li><a href="#Other_Elements">Цитати з іншими елементами</a></li>
+                <li><a href="#Links">Посилання</a></li>
+                <li><a href="#Images">Зображення</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section class="main_container">
+        <!--Горизотальні лінії-->
+        <div>
+        <hr/ class="line">
+        </div>
+         <!--Заголовки-->
+            <h3 align="center" id="Headings">Заголовки</h3>
+        <hr/ class="line">   
+            <p>
+                Щоб створити заголовок, додайте цифри (<code>#</code>) перед словом
+                або фразою. <br> Кількість цифрових знаків, які ви використовуєте, має
+                відповідати рівню заголовка. <br> Наприклад, щоб створити заголовок
+                третього рівня (<code>&lt;h3&gt;</code>), використовуйте три цифри
+                (наприклад, <code>### My Header</code>).
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Markdown</th>
+                        <th>HTML</th>
+                        <th>Візуалізований вивід</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code> # Heading level 1 </code>
+                        </td>
+                        <td>
+                            <code> &lt;h1&gt;Heading level 1&lt;/h1&gt; </code>
+                        </td>
+                        <td>
+                            <h1>Heading level 1</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code> ## Heading level 2 </code>
+                        </td>
+                        <td>
+                            <code> &lt;h2&gt;Heading level 2&lt;/h1&gt; </code>
+                        </td>
+                        <td>
+                            <h2>Heading level 2</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code> ### Heading level 3 </code>
+                        </td>
+                        <td>
+                            <code> &lt;h3&gt;Heading level 3&lt;/h3&gt; </code>
+                        </td>
+                        <td>
+                            <h3>Heading level 3</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code> #### Heading level 4 </code>
+                        </td>
+                        <td>
+                            <code> &lt;h4&gt;Heading level 4&lt;/h4&gt; </code>
+                        </td>
+                        <td>
+                            <h4>Heading level 4</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code> ##### Heading level 5 </code>
+                        </td>
+                        <td>
+                            <code> &lt;h5&gt;Heading level 5&lt;/h6&gt; </code>
+                        </td>
+                        <td>
+                            <h5>Heading level 5</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code> ###### Heading level 6 </code>
+                        </td>
+                        <td>
+                            <code> &lt;h6&gt;Heading level 6&lt;/h6&gt; </code>
+                        </td>
+                        <td>
+                            <h6>Heading level 6</h6>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr/ class="line">
+        <!--Абзац-->
+        <div>
+            <h3 align="center" id="Paragraphs">Абзац</h3>
+            <hr/ class="line">    
+            <p>
+                Для створення абзаців використовуйте порожній рядок, щоб відокремити
+                один або кілька рядків тексту.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Markdown</th>
+                        <th>HTML</th>
+                        <th>Візуалізований вивід</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code>
+                  Толя. Папа, а на том бєpєгу наші?<br>
+                  <br>
+                  Опанас (зловісно). Там кацапи… Всі зловісно мовчать. Поїзд
+                  зупиняється, чути кpики “Пpиїхали!” і погpозливий гуpкіт
+                  моpя.&#169;
+                </code>
+                        </td>
+                        <td>
+                            <code>
+                  &lt;p&gt;Толя. Папа, а на том бєpєгу наші?&lt;p&gt;<br>
+                  <br>
+                  &lt;p&gt;Опанас (зловісно). Там кацапи… Всі зловісно мовчать.
+                  Поїзд зупиняється, чути кpики “Пpиїхали!” і погpозливий гуpкіт
+                  моpя.&#169;&lt;p&gt;
+                </code>
+                        </td>
+                        <td>
+                            <p>Толя. Папа, а на том бєpєгу наші?</p>
+                            <p>
+                                Опанас (зловісно). Там кацапи… Всі зловісно мовчать. Поїзд
+                                зупиняється, чути кpики “Пpиїхали!” і погpозливий гуpкіт
+                                моpя.&#169;
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!--Розрив рядків-->
+        <hr/ class="line">
+        <div>
+            <h3 align="center" id="Line_Breaks">Розриви рядків</h3>
+        <hr/ class="line">
+            <p>
+                Щоб створити розрив рядка (<code>&lt;br&gt;</code>), завершіть рядок
+                двома або більше пробілами, а потім введіть <code>return</code>.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Markdown</th>
+                        <th>HTML</th>
+                        <th>Візуалізований вивід</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code>
+                  Общій вагон забацаного поїзда. Hа лавках сидять Гpиша, Миша,
+                  Толя і Опанас. Вони дивляться в вікно, чистять pибину, п’ють
+                  чай з алюмінієвого підстаканніка і в загалі pозважаються – як
+                  то положено у поїзді.<br />Толя (дивлячись в вікно). Папа, оно
+                  диви – самосвал.<br />Опанас (гладить синка по голові). Ото,
+                  синок, якби ти щас на доpогу вибіжав, де той самосвал, так би
+                  усє кишки у тєбя і шваpкнули.&#169;
+                </code>
+                        </td>
+                        <td>
+                            <code>
+                  &lt;p&gt;Общій вагон забацаного поїзда. Hа лавках сидять
+                  Гpиша, Миша, Толя і Опанас. Вони дивляться в вікно, чистять
+                  pибину, п’ють чай з алюмінієвого підстаканніка і в загалі
+                  pозважаються – як то положено у поїзді.&lt;br&gt;<br />Толя
+                  (дивлячись в вікно). Папа, оно диви – самосвал.&lt;br&gt;<br />Опанас
+                  (гладить синка по голові). Ото, синок, якби ти щас на доpогу
+                  вибіжав, де той самосвал, так би усє кишки у тєбя і
+                  шваpкнули.&#169;&lt;p&gt;
+                </code>
+                        </td>
+                        <td>
+                            Общій вагон забацаного поїзда. Hа лавках сидять Гpиша, Миша,
+                            Толя і Опанас. Вони дивляться в вікно, чистять pибину, п’ють чай
+                            з алюмінієвого підстаканніка і в загалі pозважаються – як то
+                            положено у поїзді.<br />Толя (дивлячись в вікно). Папа, оно диви
+                            – самосвал.<br />Опанас (гладить синка по голові). Ото, синок,
+                            якби ти щас на доpогу вибіжав, де той самосвал, так би усє кишки
+                            у тєбя і шваpкнули.&#169;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <!--Списки-->
+        <hr/ class="line">
+        <div>
+            <h3 align="center" id="Lists">Списки</h3>
+        <hr/ class="line">
+            <p>
+                Ви можете впорядкувати елементи в упорядковані та невпорядковані
+                списки.
+            </p>
+            <!--Упорядковані списки-->
+            <hr/ class="line">
+            <div>
+                <h4 align="center" id="Ordered_Lists">Упорядковані списки</h4>
+            <hr/ class="line">   
+                <p>
+                    Щоб створити упорядкований список, додайте рядки -позиції з
+                    номерами, за якими йдуть крапки. <br> Цифри не обов’язково повинні бути в
+                    порядку цифр, але список повинен починатися з цифри один.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Markdown</th>
+                            <th>HTML</th>
+                            <th>Візуалізований вивід</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>                    
+                                <ol>
+                                    <li>Перший пункт</li>
+                                    <li>Другий пункт</li>
+                                    <li>Третій пункт</li>
+                                    <li>Четвертий пункт</li>
+                                </ol>                    
+                            </td>
+                            <td>
+                                <code>
+                                    &lt;ol&gt;<br>
+                                    &lt;li&gt;Перший пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Другий пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Третій пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Четвертий пункт&lt;/li&gt;<br>
+                                    &lt;/ol&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <ol>
+                                    <li>Перший пункт</li>
+                                    <li>Другий пункт</li>
+                                    <li>Третій пункт</li>
+                                    <li>Четвертий пункт</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ol>                                    
+                                    <li>1.Перший пункт</li>
+                                    <li>1.Другий пункт</li>
+                                    <li>1.Третій пункт</li>
+                                    <li>1.Четвертий пункт</li>                                    
+                                </ol>
+                            </td>
+                            <td>
+                                <code>
+                                    &lt;ol&gt;<br>
+                                    &lt;li&gt;Перший пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Другий пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Третій пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Четвертий пункт&lt;/li&gt;<br>
+                                    &lt;/ol&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <ol>
+                                    <li>Перший пункт</li>
+                                    <li>Другий пункт</li>
+                                    <li>Третій пункт</li>
+                                    <li>Четвертий пункт</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ol>                                    
+                                    <li>1.Перший пункт</li>
+                                    <li>9.Другий пункт</li>
+                                    <li>8.Третій пункт</li>
+                                     <li>4.Четвертий пункт</li>                                    
+                                </ol>
+                            </td>
+                            <td>
+                                <code>
+                                    &lt;ol&gt;<br>
+                                    &lt;li&gt;Перший пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Другий пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Третій пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Четвертий пункт&lt;/li&gt;<br>
+                                    &lt;/ol&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <ol>
+                                    <li>Перший пункт</li>
+                                    <li>Другий пункт</li>
+                                    <li>Третій пункт</li>
+                                    <li>Четвертий пункт</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ol>                                    
+                                    <li>Перший пункт</li>
+                                    <li>Другий пункт</li>
+                                    <li>Третій пункт</li>
+                                    <li> 
+                                    <ol>
+                                        <li>Відступ з елементом</li>
+                                        <li>Відступ з елементом</li>
+                                    </ol>
+                                    </li>
+                                    <li>Четвертий пункт</li>                                   
+                                </ol>
+                            </td>
+                            <td>
+                                <code>
+                                    &lt;ol&gt;<br>
+                                    &lt;li&gt;Перший пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Другий пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Третій пункт&lt;/li&gt;<br>
+                                    &lt;ol&gt;<br>
+                                    &lt;li&gt;Відступ з елементом&lt;/li&gt;<br>
+                                    &lt;li&gt;Відступ з елементом&lt;/li&gt;<br>
+                                    &lt;/ol&gt;<br>
+                                    &lt;li&gt;Четвертий пункт&lt;/li&gt;<br>
+                                    &lt;/ol&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <ol>
+                                    <li>Перший пункт</li>
+                                    <li>Другий пункт</li>
+                                    <li>Третій пункт</li>
+                                    <li>    
+                                        <ol>
+                                            <li>Відступ з елементом</li>
+                                            <li>Відступ з елементом</li>
+                                        </ol>
+                                    </li>
+                                    <li>Четвертий пункт</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--Невпорядковані списки-->
+            <hr/ class="line">
+            <div>
+                <h4 align="center" id="Unordered_Lists">Невпорядковані списки</h4>
+            <hr/ class="line">
+                <p>
+                    Щоб створити невпорядкований список, додайте тире (<code>-</code>),
+                    зірочки (<code>*</code>) або знаки плюс (<code>+</code>) перед
+                    позиціями. <br> Відступ одного або кількох елементів для створення
+                    вкладеного списку.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Markdown</th>
+                            <th>HTML</th>
+                            <th>Візуалізований вивід</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul class="ul_none">                                    
+                                    <li>- Перший пункт</li>
+                                    <li>- Другий пункт</li>
+                                    <li>- Третій пункт</li>
+                                    <li>- Четвертий пункт</li>                                    
+                                </ul>
+                            </td>
+                            <td>
+                                <code>
+                                    &lt;ul&gt;<br>
+                                    &lt;li&gt;Перший пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Другий пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Третій пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Четвертий пункт&lt;/li&gt;<br>
+                                    &lt;/ul&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Перший пункт</li>
+                                    <li>Другий пункт</li>
+                                    <li>Третій пункт</li>
+                                    <li>Четвертий пункт</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul class="ul_none">                                    
+                                    <li>* Перший пункт</li>
+                                    <li>* Другий пункт</li>
+                                    <li>* Третій пункт</li>
+                                    <li>* Четвертий пункт</li>                                    
+                                </ul>
+                            </td>
+                            <td>
+                                <code>
+                                    &lt;ul&gt;<br>
+                                    &lt;li&gt;Перший пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Другий пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Третій пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Четвертий пункт&lt;/li&gt;<br>
+                                    &lt;/ul&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Перший пункт</li>
+                                    <li>Другий пункт</li>
+                                    <li>Третій пункт</li>
+                                    <li>Четвертий пункт</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul class="ul_none">                                    
+                                    <li>+ Перший пункт</li>
+                                    <li>+ Другий пункт</li>
+                                    <li>+ Третій пункт</li>
+                                    <li>+ Четвертий пункт</li>                                    
+                                </ul>
+                            </td>
+                            <td>
+                                <code>
+                                    &lt;ul&gt;<br>
+                                    &lt;li&gt;Перший пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Другий пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Третій пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Четвертий пункт&lt;/li&gt;<br>
+                                    &lt;/ul&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Перший пункт</li>
+                                    <li>Другий пункт</li>
+                                    <li>Третій пункт</li>
+                                    <li>Четвертий пункт</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul class="ul_none">                                    
+                                    <li>- Перший пункт</li>
+                                    <li>- Другий пункт</li>
+                                    <li>- Третій пункт</li>
+                                    <li>
+                                    <ul>
+                                        <li>- Відступ з елементом</li>
+                                        <li>- Відступ з елементом</li>
+                                    </ul>
+                                    </li>
+                                    <li>- Четвертий пункт</li>                                   
+                                </ul>
+                            </td>
+                            <td>
+                                <code>
+                                    &lt;ul&gt;<br>
+                                    &lt;li&gt;Перший пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Другий пункт&lt;/li&gt;<br>
+                                    &lt;li&gt;Третій пункт&lt;/li&gt;<br>
+                                    &lt;ul&gt;<br>
+                                    &lt;li&gt;Відступ з елементом&lt;/li&gt;<br>
+                                    &lt;li&gt;Відступ з елементом&lt;/li&gt;<br>
+                                    &lt;/ul&gt;<br>
+                                    &lt;li&gt;Четвертий пункт&lt;/li&gt;<br>
+                                    &lt;/ul&gt;
+                                </code>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Перший пункт</li>
+                                    <li>Другий пункт</li>
+                                    <li>Третій пункт</li>
+                                    <li>
+                                    <ul>
+                                        <li>Відступ з елементом</li>
+                                        <li>Відступ з елементом</li>
+                                    </ul>
+                                    </li>
+                                    <li>Четвертий пункт</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!--Акценти-->
+        <hr/ class="line">
+        <div>
+            <h2 align="center" id="Emphasis">Акценти</h2>
+        <hr/ class="line">    
+            <p>Ви можете додати наголос, зробивши текст жирним або курсивом.</p>
+            <!--Жирний-->
+
+            <div>
+                <hr/ class="line">
+                <h3 align="center" id="bold">Жирний</h3>
+                <hr/ class="line">
+                <p>
+                    Щоб виділити жирний текст, додайте дві зірочки або підкреслення
+                    перед і після слова чи фрази.<br />
+                    Щоб виділитисередину слова для наголосу, додайте дві зірочки без
+                    пробілів навколо літер.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Markdown</th>
+                            <th>HTML</th>
+                            <th>Візуалізований вивід</th>
+                        </tr>
+                        <tr>
+                            <td><code>хутін **пуйло** ла-ла-ла-ла-ла</code></td>
+                            <td>хутін &lt;strong&gt;пуйло&lt;/strong&gt; ла-ла-ла-ла-ла</td>
+                            <td>хутін <strong>пуйло</strong> ла-ла-ла-ла-ла</td>
+                        </tr>
+                        <tr>
+                            <td><code>хутін __пуйло__ ла-ла-ла-ла-ла</code></td>
+                            <td>хутін &lt;strong&gt;пуйло&lt;/strong&gt; ла-ла-ла-ла-ла</td>
+                            <td>хутін <strong>пуйло</strong> ла-ла-ла-ла-ла</td>
+                        </tr>
+                        <tr>
+                            <td><code>хутін**пуйло**ла-ла-ла-ла-ла</code></td>
+                            <td>хутін&lt;strong&gt;пуйло&lt;/strong&gt;ла-ла-ла-ла-ла</td>
+                            <td>хутін<strong>пуйло</strong>ла-ла-ла-ла-ла</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <!--Курсив-->
+            <div>
+                <hr/ class="line">
+                <h3 align="center" id="italic">Курсив</h3>
+                <hr/ class="line">
+                <p>
+                    Щоб виділити курсивом текст, додайте одну зірочку або підкреслення
+                    перед і після слова чи фрази. <br>
+                    Щоб виділити курсивом середину слова для наголосу, додайте одну
+                    зірочку без пробілів навколо літер.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Markdown</th>
+                            <th>HTML</th>
+                            <th>Візуалізований вивід</th>
+                        </tr>
+                        <tr>
+                            <td><code>хутін *пуйло* ла-ла-ла-ла-ла</code></td>
+                            <td>хутін &lt;em&gt;пуйло&lt;/em&gt; ла-ла-ла-ла-ла</td>
+                            <td>хутін <em>пуйло</em> ла-ла-ла-ла-ла</td>
+                        </tr>
+                        <tr>
+                            <td><code>хутін _пуйло_ ла-ла-ла-ла-ла</code></td>
+                            <td>хутін &lt;em&gt;пуйло&lt;/em&gt; ла-ла-ла-ла-ла</td>
+                            <td>хутін <em>пуйло</em> ла-ла-ла-ла-ла</td>
+                        </tr>
+                        <tr>
+                            <td><code>хутін*пуйло*ла-ла-ла-ла-ла</code></td>
+                            <td>хутін&lt;em&gt;пуйло&lt;/em&gt;ла-ла-ла-ла-ла</td>
+                            <td>хутін<em>пуйло</em>ла-ла-ла-ла-ла</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <!--Жирний тв курсив-->
+            <div>
+                <hr/ class="line">
+                <h3 align="center" id="bold_and_italic">Жирний та курсив</h3>
+                <hr/ class="line">
+                <p>
+                    Щоб виділити текст жирним і курсивом одночасно, додайте три зірочки
+                    або підкреслення перед і після слова чифрази.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Markdown</th>
+                            <th>HTML</th>
+                            <th>Візуалізований вивід</th>
+                        </tr>
+                        <tr>
+                            <td><code>хутін ***пуйло*** ла-ла-ла-ла-ла</code></td>
+                            <td>
+                                хутін &lt;strong&gt;&lt;em&gt;пуйло&lt;/em&gt;&lt;/strong&gt;
+                                ла-ла-ла-ла-ла
+                            </td>
+                            <td>
+                                хутін <strong><em>пуйло</em></strong> ла-ла-ла-ла-ла
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>хутін ___пуйло___ ла-ла-ла-ла-ла</code></td>
+                            <td>
+                                хутін &lt;strong&gt;&lt;em&gt;пуйло&lt;/em&gt;&lt;/strong&gt;
+                                ла-ла-ла-ла-ла
+                            </td>
+                            <td>
+                                хутін <strong><em>пуйло</em></strong> ла-ла-ла-ла-ла
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>хутін __*пуйло*__ ла-ла-ла-ла-ла</code></td>
+                            <td>
+                                хутін &lt;strong&gt;&lt;em&gt;пуйло&lt;/em&gt;&lt;/strong&gt;
+                                ла-ла-ла-ла-ла
+                            </td>
+                            <td>
+                                хутін <strong><em>пуйло</em></strong> ла-ла-ла-ла-ла
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>хутін **_пуйло_** ла-ла-ла-ла-ла</code></td>
+                            <td>
+                                хутін &lt;strong&gt;&lt;em&gt;пуйло&lt;/em&gt;&lt;/strong&gt;
+                                ла-ла-ла-ла-ла
+                            </td>
+                            <td>
+                                хутін <strong><em>пуйло</em></strong> ла-ла-ла-ла-ла
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>хутін***пуйло***ла-ла-ла-ла-ла</code></td>
+                            <td>
+                                хутін&lt;strong&gt;&lt;em&gt;пуйло&lt;/em&gt;&lt;/strong&gt;ла-ла-ла-ла-ла
+                            </td>
+                            <td>
+                                хутін<strong><em>пуйло</em></strong>ла-ла-ла-ла-ла
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        
+        <!--Цитати-->
+        <div>
+            <!--Блок цитати-->
+            <div>
+                <hr/ class="line">
+                <h2 align="center" id="Blockquotes">Блок-цитати</h2>
+                <hr/ class="line">
+                <p>Щоб створити цитату, додайте > перед абзацом</p>
+                <code>>Не вірю у силу слова я, а вірю в силу пі*дюлей.</code>
+                <p>Виведений результат виглядає так:</p>
+                <blockquote>
+                    <p>Не вірю у силу слова я, а вірю в силу пі*дюлей.</p>
+                </blockquote>
+            </div>
+            <!--Цитати з кілкома абзацами-->
+            <hr/ class="line">
+            <div>
+                <h3 align="center" id="Blockquotes_Multiple">Цитати з кількома абзацами</h3>
+            <hr/ class="line">
+                <p>
+                    Блок - цитати можуть містити кілька абзаців. Додайте > до порожніх
+                    рядків між абзацами.
+                </p>
+                <p>
+                    <code> >Так дальше жить ніззя! Скрізь долбо**би!</code>
+                </p>
+                <p>
+                    <code> >Покайтесь, браття, i не робiть х*йнi</code>
+                </p>
+                <p>Виведений результат виглядає так:</p>
+                <blockquote>
+                    <p>Так дальше жить ніззя! Скрізь долбо**би!</p>
+                    <p>Покайтесь, браття, i не робiть х*йнi!</p>
+                </blockquote>
+            </div>
+            <!--Вкладені цитати-->
+            <hr/ class="line">
+            <div>
+                <h3 align="center" id="Nested_Blockquotes">Вкладені цитати</h3>
+            <hr/ class="line">    
+                <p>
+                    Блок-цитати можуть бути вкладеними. Додайте >>перед абзацом, який
+                    потрібно вставити.
+                </p>
+                <p>
+                    <code>>Так дальше жить ніззя! Скрізь долбо**би!</code>
+                </p>
+                <p>
+                    <code>>>Покайтесь, браття, i не робiть х*йнi!</code>
+                </p>
+                <p>Виведений результат виглядає так:</p>
+                <blockquote>
+                    <p>Так дальше жить ніззя! Скрізь долбо**би!</p>
+                    <blockquote>
+                        <p>Покайтесь, браття, i не робiть х*йнi!</p>
+                    </blockquote>
+                </blockquote>
+            </div>
+            <!--Цитати з Іншими елемаентами-->
+            <hr/ class="line">
+            <div>
+                <h3 align="center" id="Other_Elements">Цитати з іншими елементами</h3>
+            <hr/ class="line">    
+                <p>
+                    Блок -цитати можуть містити інші елементи у форматі Markdown. <br>
+                    Не всі елементи можна використовувати - вам доведеться
+                    поекспериментувати, щоб побачити, які з них працюють.
+                </p>
+                <div>
+                    <code>
+              > #### Квартальні результати виглядають чудово!
+              <br>
+              >
+              <br>
+              > - Дохід вийшов за межі діаграми.
+              <br>
+              > - Прибуток був вищим, ніж будь - коли.
+              <br>
+              >
+              <br>
+              > *Все* йде за **планом** .
+            </code>
+                    <p>Виведений результат виглядає так:</p>
+                    <blockquote>
+                        <h4>Квартальні результати виглядають чудово!</h4>
+                        <ul>
+                            <li>Дохід вийшов за межі діаграми.</li>
+                            <li>Прибуток був вищим, ніж будь - коли.</li>
+                        </ul>
+                        <p><em>Все</em> йде за <strong>планом</strong></p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        
+        <!--Посилання-->
+        <hr/ class="line">
+        <div>
+            <h2 align="center" id="Links">Посилання</h2>
+        <hr/ class="line">    
+            <p>Markdown підтримує два типи оформлення посилань:</p>
+            <ul>
+                <li>
+                    Гіперпосилання, з негайним зазначенням адреси (внутритекстове);
+                </li>
+            </ul>
+            <p>
+                <code>Вояки для ваших IT проєктів [IT BRO](https://itbro.pro/)</code>
+            </p>
+            <p>
+                Вояки для ваших IT проєктів <a href="https://itbro.pro/">IT BRO</a>
+            </p>
+            <ul>
+                <li>Гіперпосилання, подібне виносці.</li>
+            </ul>
+            <p><code>Вояки для ваших IT проєктів [IT BRO][1]</code></p>
+            <p><code>[1]: (https://itbro.pro/)</code></p>
+            <p>
+                Вояки для ваших IT проєктів <a href="https://itbro.pro/">IT BRO</a>
+            </p>
+        </div>
+        
+        <!--Зображення-->
+        <hr/ class="line">
+        <div>
+            <h3 align="center" id="Images">Зображення</h3>
+            <hr/ class="line">    
+            <p>
+                Щоб додати зображення, додайте знак оклику ( !), а потім
+                альтернативний текст у квадратних дужках, <br />
+                а також шлях або URL-адресу до об’єкта зображення у дужках.
+            </p>
+            <p>
+                <code>![Падме
+            мем](https://kept.com.ua/image/9cx/video_image-3ntrP_xTfg.jpeg
+            "Meme")</code>
+            </p>
+            <p>Виведений результат виглядає так:</p>
+            <p>
+                <img width="500" src="https://kept.com.ua/image/9cx/video_image-3ntrP_xTfg.jpeg" alt="Падме мем" />
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div>
+            <p>made by <a href="https://github.com/Andrii17s/activehamsters.git">activehamsters</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
