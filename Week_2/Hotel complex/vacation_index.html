@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-	<meta charset="UTF-8">
-	<title>Fixed Header with html and css | Collapsing Header Tutorial</title>
-	<link href="vacation_style.css" rel="stylesheet">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Хом'якiвка</title>
+	<link href="../activeLib/stylesheet.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,7 +12,7 @@
 		<header>
 			<div class="wrapper">
 				<div class="logo">
-					<a href="#">ПОЛОНИНА</a>
+					<a href="#">Хом'якiвка</a>
 				</div>
 				<nav>
 					 <a href="#">галерея</a> <a href="#">номери</a> <a href="#">відпочинок</a><a href="https://www.google.com.ua/?hl=uk">пошук</a>
@@ -22,25 +22,24 @@
 <!--End Header-->
 
 <!--Banner area-->
-		<div class="banner-area">
-			<h2>Готельний комплекс<br>"Полонина"</h2>
+		<div class="bannerArea" style="background-image: url(img/carpathians.jpg)">
+			<h2 class="bannerAreaText">Готельний комплекс<br>"Хом'якiвка"</h2>
 		</div>
 <!--End Banner area-->
 
 <!--Content area #1-->
-		<div class="content-area1">
+		<div class="contentAreaVideos">
 			<div class="wrapper1">
 				<h2>ПЕЙЗАЖІ</h2>
-				<hr>
-				<br>
-				<table id="vidioTable">
+
+				<table id="videoTable">
 					<tr>
-						<td><iframe width="560" height="315" src="vidio/videoplayback1.mp4"></iframe></td>
-						<td><iframe width="560" height="315" src="vidio/videoplayback2.mp4"></iframe></td>
+						<td><iframe class = "smallVideo" src="video/videoplayback1.mp4"></iframe></td>
+						<td><iframe class = "smallVideo" src="video/videoplayback2.mp4"></iframe></td>
 					</tr>
 					<tr>
-						<td><iframe width="560" height="315" src="vidio/videoplayback3.mp4"></iframe></td>
-						<td><iframe width="560" height="315" src="vidio/videoplayback4.mp4"></iframe></td>
+						<td><iframe class = "smallVideo" src="video/videoplayback3.mp4"></iframe></td>
+						<td><iframe class = "smallVideo" src="video/videoplayback4.mp4"></iframe></td>
 					</tr>
 				</table>
 			</div>
@@ -48,12 +47,12 @@
 <!--End Content area #1-->
 
 <!--Content area #2-->
-		<div class="content-area2">
+		<div class="contentAreaInfo">
 			<div class="wrapper2">
 				<h2>про нас</h2>
 				<hr>
 				<p>
-					Котеджний комплекс “Річка” – це туристичне затишне місце серед гірської краси Закарпаття!<br>
+					Котеджний комплекс “Хом'якiвка” – це туристичне затишне місце серед гірської краси Закарпаття!<br>
 					Чудова локація, що ідеально підходить для Вашого перезавантаження, релаксу та натхнення!<br>
 					Тут присутнє дивовижне відчуття свободи та відособленості від міста.<br>
 					Ми гарантуємо, що саме це місце буде найкращим варіантом для того,<br>
@@ -64,12 +63,12 @@
 <!--End Content area #2-->
 
 <!--Content area #3-->
-		<div class="content-area3">
+		<div class="contentAreaGalery">
 			<div class="wrapper2">
 				<h2>ГАЛЕРЕЯ</h2>
 				<hr>
 				<p>
-					фотки
+					GALERY
 				</p>
 			</div>
 		</div>
@@ -77,38 +76,38 @@
 
 <!--Footer-->
 		<footer>
-				<div class="footer-wrapper">
+				<div class="footerWrapper">
 						<div class="info">
 							<h4>Зв'яжіться з нами</h4>
 							<form action="#" class="form">
-								<input type="email" placeholder="Email" class="form__input" required>
-								<button type="submit" class="form__btn btn">Відправити</button>
+								<input type="email" placeholder="Email" class="emailInput" placeholder="hamster@from.ua" required>
+								<button type="submit" class="sendButton">Відправити</button>
 							</form>
 						</div>
 
-					<div class="footer-menu">
+					<div class="footerMenu">
 						<ul >
-							<li class="footer-menu__item">
+							<li class="footerMenuItem">
 								<a href="#">про нас</a>
 							</li>
-							<li class="footer-menu__item">
+							<li class="footerMenuItem">
 								<a href="#">контакти</a>
 							</li>
-							<li class="footer-menu__item">
+							<li class="footerMenuItem">
 								<a href="#">наше кредо</a>
 							</li>
 						</ul>
 					</div>
 
-			   <div class="footer-menu">
+			   <div class="footerMenu">
 					<ul>
-						<li class="footer-menu__item">
+						<li class="footerMenuItem">
 							<a href="#">telegram</a>
 						</li>
-						<li class="footer-menu__item">
+						<li class="footerMenuItem">
 							<a href="#">facebook</a>
 						</li>
-						<li class="footer-menu__item">
+						<li class="footerMenuItem">
 							<a href="#">github</a>
 						</li>
 					</ul>
