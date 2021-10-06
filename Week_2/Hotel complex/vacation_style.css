@@ -53,7 +53,7 @@ nav a {
 	height: 500px;
 	position: fixed;
 	top: 100px;
-	background-image: url(image/carpathians.jpg);
+	background-image: url(images/carpathians.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
@@ -99,14 +99,14 @@ nav a {
 
 .content-area2 {
 	text-align: center;
-	width: 50%;
+	width: 100%;
 	position: relative;
 	top: 450px;
 	background: #f0d6ac;
-	height: 1500px;
+	height: 600px;
 	float: left;
-
 }
+
 .content-area2 h2 {
 	text-align: center;
 	letter-spacing: 4px;
@@ -122,20 +122,92 @@ nav a {
 
 .content-area2 pre {
 	text-align: center;
-	padding: 2% 0px;
+	padding: 2% 0;
 	line-height: 30px;
 }
 
-/*Content area #3*/
-
 .content-area3 {
 	text-align: center;
-	width: 50%;
+	background-color: white;
+	width: 100%;
 	position: relative;
 	top: 450px;
-	background: #f1cf8e;
-	height: 1500px;
-	float: right;
+	height: 600px;
+	float: left;
+}
+
+.content-area3 h2 {
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+
+/*Content gallery*/
+
+.gallery-list {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	font-size: 0;
+	margin-top: 30px;
+}
+
+.gallery-item {
+	display: block;
+	flex: 25%;
+	overflow: hidden;
+	position: relative;
+}
+
+.gallery-item-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	opacity: 0;
+	transition: opacity .5s ease;
+	z-index: 2;
+}
+
+.gallery-item:hover .gallery-item-hover {
+	opacity: 1;
+}
+
+.gallery-item:hover img {
+	transform: scale(1.3) rotate(5deg);
+}
+
+.gallery-item img {
+	max-width: 100%;
+	height: auto;
+	transition: all .5s ease;
+}
+
+@media (max-width: 991px) {
+	.gallery-item{
+		flex: 33.3%;
+	}
+}
+
+@media (max-width: 768px) {
+	.gallery-item{
+		flex: 50%;
+	}
+}
+
+@media (max-width: 530px) {
+	.gallery-item{
+		flex: 100%;
+	}
 }
 
 /*Footer*/
@@ -150,6 +222,7 @@ footer {
 	bottom: 0;
 	color: white;
 }
+
 
 .footer-wrapper {
 	display: flex;
