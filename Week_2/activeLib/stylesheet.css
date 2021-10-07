@@ -12,6 +12,12 @@ body {
 	align-items: center;
 	background: #ebebeb;
 }
+
+h1 {
+	font-size: 45px;
+	padding: 30px;
+}
+
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
@@ -39,6 +45,7 @@ header {
 	color: #fff;
 	letter-spacing: 5px;
 }
+
 
 .blackLogo a {
 	text-decoration: none;
@@ -279,36 +286,30 @@ footer {
 .question {
 	width: 100%;
 	font-size: 36px;
-	justify-content: center;
 	text-align: center;
 	color: red;
 }
 
 .greenLink:link {
-	text-align: center;
-	size: 40px;
-  	color: green;
+  	color: yellow;
   	background-color: transparent;
   	text-decoration: none;
 }
 
 .greenLink:visited {
-  	color: pink;
-	size: 40px;
+  	color: darkcyan;
   	background-color: transparent;
   	text-decoration: none;
 }
 
 .greenLink:hover {
- 	color: red;
-	size: 40px;
+ 	color: green;
  	background-color: transparent;
  	text-decoration: underline;
 }
 
 .greenLink:active {
-  	color: yellow;
-	size: 40px;
+  	color: maroon;
   	background-color: transparent;
   	text-decoration: underline;
 }
@@ -395,14 +396,14 @@ nav a:hover {
 }
 
 .tg {
-	border-collapse:collapse;
-	border-spacing:0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 .tg td {
-	border-color:black;
-	border-style:solid;
-	border-width:1px;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
 	font-family:Arial, sans-serif;
 	font-size:14px;
 	overflow:hidden;
@@ -418,14 +419,16 @@ nav a:hover {
 	font-size:14px;
 	font-weight:normal;
 	overflow:hidden;
-	padding:10px 5px;
+	padding: 10px 5px;
 	word-break:normal;
 }
 
 .tg .tg-zv4m {
-	border-color:#ffffff;
+	border-color: #ffffff;
 	text-align:left;
-	vertical-align:top
+	vertical-align:top;
+	font-size: 15px;
+	padding: 20px;
 }
 
 .tg .tg-73oq{
