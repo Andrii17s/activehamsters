@@ -277,12 +277,9 @@ footer {
 
 .question {
 	width: 100%;
-	font-size: 18px;
-}
-
-.answer {
-	justify-content: left;
-	text-align: left;
+	font-size: 36px;
+	justify-content: center;
+	text-align: center;
 	color: red;
 }
 
