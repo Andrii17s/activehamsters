@@ -55,7 +55,6 @@ nav a {
 .bannerArea {
 	width: 100%;
 	height: 400px;
-	position: fixed;
 	top: 100px;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -81,7 +80,6 @@ nav a {
 	width: 90%;
 	align-self: center;
 	position: relative;
-	top: 450px;
 	background: #f0d6ac;
 }
 
@@ -101,9 +99,8 @@ nav a {
 
 .contentAreaInfo {
 	text-align: center;
-	width: 60%;
+	width: 90%;
 	position: relative;
-	top: 450px;
 	background: #f0d6ac;
 	height: 100%;
 }
@@ -131,25 +128,19 @@ nav a {
 
 .contentAreaGalery {
 	text-align: center;
-	width: 50%;
+	width: 90%;
 	position: relative;
-	top: 450px;
 	background: #f1cf8e;
 	height: 550px;
-
-	float: right;
 }
 
 /*Footer*/
 
 footer {
-	position: fixed;
 	background-color: #262626;
 	width: 100%;
 	height: auto;
-	padding: 20px;
-	left: 0;
-	bottom: 0;
+	padding: 20px 20px 0 20px;
 	color: white;
 }
 
@@ -203,7 +194,6 @@ footer {
 	background-color:#4d4d4d;
 	font-size: 18px;
 	left: 0;
-	bottom: 0;
 	width: 100%;
 	height: auto;
 	color: white;
