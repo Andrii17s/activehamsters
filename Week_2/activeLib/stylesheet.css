@@ -1,189 +1,252 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-	min-height: auto;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background: #ebebeb;
+  min-height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ebebeb;
 }
 .wrapper {
-	width: 100%;
-	margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*Header*/
 
 header {
-	height: 100px;
-	background: #262626;
-	width: 100%;
-	z-index: 10;
-	/*position: fixed;*/
+  height: 100px;
+  background: #262626;
+  width: 100%;
+  z-index: 10;
+  /*position: fixed;*/
 }
 
+/* .logo {
+  width: 30%;
+  float: left;
+  line-height: 100px;
+} */
+
 .logo {
-	width: 30%;
-	float: left;
-	line-height: 100px;
+  width: 10%;
+  float: left;
+  line-height: 100px;
 }
+
 .logo a {
-	text-decoration: none;
-	font-size: 30px;
-	color: #fff;
-	letter-spacing: 5px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 5px;
 }
-nav {
+
+/* nav {
 	float: right;
 	line-height: 100px;
+} */
+
+nav {
+  display: flex;
+  flex-direction: row;
 }
 
 nav a {
-	text-decoration: none;
-	letter-spacing: 4px;
-	font-size: 20px;
-	margin: 0 10px;
-	color: #fff;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
 }
 
 /*Banner area*/
 
 .bannerArea {
+<<<<<<< Updated upstream
 	width: 100%;
 	height: 400px;
 	top: 100px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
+=======
+  width: 100%;
+  height: 500px;
+  position: fixed;
+  top: 100px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+>>>>>>> Stashed changes
 }
 
 .bannerAreaText {
-	padding-top: 8%;
-	font-size: 70px;
-	text-transform: uppercase;
-	color: #fff;
+  padding-top: 8%;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
-#videoTable{
-	width: 100%;
-	height: auto;
-	text-align: center;
+#videoTable {
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 /*Content area #1*/
 
 .contentAreaVideos {
+<<<<<<< Updated upstream
 	width: 90%;
 	align-self: center;
 	position: relative;
 	background: #f0d6ac;
+=======
+  width: 60%;
+  align-self: center;
+  position: relative;
+  top: 450px;
+  background: transparent;
+>>>>>>> Stashed changes
 }
 
 .contentAreaVideos h2 {
-	letter-spacing: 4px;
-	padding-top: 30px;
-	font-size: 40px;
-	margin: 0;
+  letter-spacing: 4px;
+  padding-top: 30px;
+  font-size: 40px;
+  margin: 0;
 }
 
 .contentAreaVideos p {
-	padding: 2% 0px;
-	line-height: 30px;
+  padding: 2% 0px;
+  line-height: 30px;
 }
 
 /*Content area #2*/
 
 .contentAreaInfo {
+<<<<<<< Updated upstream
 	text-align: center;
 	width: 90%;
 	position: relative;
 	background: #f0d6ac;
 	height: 100%;
+=======
+  text-align: center;
+  width: 50%;
+  position: relative;
+  top: 450px;
+  background: #f0d6ac;
+  height: 100%;
+>>>>>>> Stashed changes
 }
 
 .contentAreaInfo h2 {
-	text-align: center;
-	letter-spacing: 4px;
-	padding-top: 30px;
-	font-size: 40px;
-	margin: 0;
+  text-align: center;
+  letter-spacing: 4px;
+  padding-top: 30px;
+  font-size: 40px;
+  margin: 0;
 }
 .contentAreaInfo p {
-	text-align: center;
-	padding: 2% 0;
-	line-height: 30px;
+  text-align: center;
+  padding: 2% 0;
+  line-height: 30px;
 }
 
 .contentAreaInfo pre {
-	text-align: center;
-	padding: 2% 0px;
-	line-height: 30px;
+  text-align: center;
+  padding: 2% 0px;
+  line-height: 30px;
 }
 
 /*Content area #3*/
 
 .contentAreaGalery {
+<<<<<<< Updated upstream
 	text-align: center;
 	width: 90%;
 	position: relative;
 	background: #f1cf8e;
 	height: 750px;
+=======
+  text-align: center;
+  width: 50%;
+  position: relative;
+  top: 450px;
+  background: #f1cf8e;
+  height: 450px;
+
+  float: right;
+>>>>>>> Stashed changes
 }
 
 /*Footer*/
 
 footer {
+<<<<<<< Updated upstream
 	background-color: #262626;
 	width: 100%;
 	height: auto;
 	padding: 20px 20px 0 20px;
 	color: white;
+=======
+  position: fixed;
+  background-color: #262626;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  color: white;
+>>>>>>> Stashed changes
 }
 
 .footerWrapper {
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .footerMenuItem {
-	text-align: left;
-	list-style-type: none;
+  text-align: left;
+  list-style-type: none;
 }
 
 .footerMenuItem a {
-	text-decoration: none;
-	letter-spacing: 4px;
-	font-size: 20px;
-	margin: 0 10px;
-	color: #fff;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
 }
 
 .info h4 {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .form {
-	display: flex;
-	flex-flow: column;
-	font-size: 10px;
-	font-weight: 400;
+  display: flex;
+  flex-flow: column;
+  font-size: 10px;
+  font-weight: 400;
 }
 
 .form__input {
-	width: 100%;
-	height: 20px;
-	border: 1px solid #e5e5e5;
-	border-radius: 5px;
-	outline: none;
-	margin: 5px auto;
+  width: 100%;
+  height: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  outline: none;
+  margin: 5px auto;
 }
 
 .form__btn {
+<<<<<<< Updated upstream
 	width: auto;
 	height: 25px;
 }
@@ -197,14 +260,30 @@ footer {
 	width: 100%;
 	height: auto;
 	color: white;
+=======
+  width: auto;
+  height: 25px;
+}
+
+.copyright {
+  position: fixed;
+  background-color: #4d4d4d;
+  font-size: 18px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  color: white;
+>>>>>>> Stashed changes
 }
 
 .smallVideo {
-	width: 100%;
-	height: 315px;
+  width: 100%;
+  height: 315px;
 }
 
 .sendButton {
+<<<<<<< Updated upstream
 	appearance: none;
 	background-color: #2ea44f;
 	border: 1px solid rgba(27, 31, 35, .15);
@@ -227,6 +306,31 @@ footer {
 	touch-action: manipulation;
 	vertical-align: middle;
 	white-space: nowrap;
+=======
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+>>>>>>> Stashed changes
 }
 
 .sendButton:focus:not(:focus-visible):not(.focus-visible) {
@@ -239,6 +343,7 @@ footer {
 }
 
 .sendButton:focus {
+<<<<<<< Updated upstream
 	box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
 	outline: none;
 }
@@ -253,6 +358,22 @@ footer {
 .sendButton:active {
 	background-color: #298e46;
 	box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+=======
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.sendButton:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.sendButton:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+>>>>>>> Stashed changes
 }
 
 .emailInput {
@@ -266,6 +387,7 @@ footer {
 }
 
 .question {
+<<<<<<< Updated upstream
 	width: 100%;
 	font-size: 36px;
 	justify-content: center;
@@ -410,4 +532,20 @@ nav a:hover {
 	border-color:#ffffff;
 	text-align:left;
 	vertical-align:top
+=======
+  width: 100%;
+  font-size: 18px;
+}
+
+.answer {
+  justify-content: left;
+  text-align: left;
+  color: red;
+}
+
+.textArea {
+  width: 100%;
+  text-align: left;
+  justify-content: left;
+>>>>>>> Stashed changes
 }
