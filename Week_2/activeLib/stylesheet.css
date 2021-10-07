@@ -3,6 +3,7 @@
 	padding: 0;
 }
 body {
+	width: 90%;
 	min-height: auto;
 	text-align: center;
 	display: flex;
@@ -42,6 +43,14 @@ header {
 	text-decoration: none;
 	font-size: 30px;
 	color: #fff;
+	letter-spacing: 5px;
+}
+
+
+.blackLogo a {
+	text-decoration: none;
+	font-size: 30px;
+	color: black;
 	letter-spacing: 5px;
 }
 
@@ -85,7 +94,7 @@ nav a {
 /*Content area #1*/
 
 .contentAreaVideos {
-	width: 90%;
+	width: 80%;
 	align-self: center;
 	position: relative;
 	background: #f0d6ac;
@@ -145,6 +154,7 @@ nav a {
 /*Footer*/
 
 footer {
+	opacity: 0.6;
 	background-color: #262626;
 	width: 100%;
 	height: auto;
@@ -377,8 +387,12 @@ footer {
 
 nav a:hover {
 	font-size: 30px;
-	background-color:#251d15;
+	background-color: #251d15;
 	border-radius: 20px;
+}
+
+.resImg {
+	max-width: 600px;
 }
 
 .tg {
@@ -416,3 +430,14 @@ nav a:hover {
 	font-size: 15px;
 	padding: 20px;
 }
+
+.tg .tg-73oq{
+	border-color:#000000;
+	text-align:left;
+	vertical-align:top
+}
+
+.tg .tg-0pky{
+	border-color:inherit;
+	text-align:left;
+	vertical-align:top}
