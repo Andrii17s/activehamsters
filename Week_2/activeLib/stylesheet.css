@@ -283,6 +283,34 @@ footer {
 	color: red;
 }
 
+.greenLink:link {
+	size: 16px;
+  	color: green;
+  	background-color: transparent;
+  	text-decoration: none;
+}
+
+.greenLink:visited {
+  	color: pink;
+	size: 16px;
+  	background-color: transparent;
+  	text-decoration: none;
+}
+
+.greenLink:hover {
+ 	color: red;
+	size: 16px;
+ 	background-color: transparent;
+ 	text-decoration: underline;
+}
+
+.greenLink:active {
+  	color: yellow;
+	size: 16px;
+  	background-color: transparent;
+  	text-decoration: underline;
+}
+
 .textArea {
 	width: 100%;
 	text-align: left;
