@@ -290,7 +290,7 @@ footer {
 }
 
 .greenLink:link {
-  	color: yellow;
+  	color: rgb(29, 39, 177);
   	background-color: transparent;
   	text-decoration: none;
 }
