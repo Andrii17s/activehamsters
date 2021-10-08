@@ -19,11 +19,18 @@
         </ul>
     </nav>
     <hr />
-
-    <label for="lastname">Ім*я користувача</label><input type="text" id="lastname">
-
-    <input type="text" id="lastname"><label for="lastname">Прізвище</label>
-    <hr/>
+    <form>
+        <fieldset>
+            <legend>Ім*я користувача</legend>
+            <label>
+                Ваше ім*я
+            </label>
+        </fieldset>
+        <input required="заповніть поле" placeholder="Ім*я" type="text" name="name">
+        <input required="заповніть поле" placeholder="Назва команди" type="text" name="unit">
+        <button type="submit" value="send">
+            Відправити
+        </button>
     
     
 
@@ -36,5 +43,5 @@
     <hr/>
     <footer>
         Зроблено на скору руку, але це не точно. <a href="#"> Тик сюди</a>
-    </footer>
-    </html>
+</footer>
+</html>
