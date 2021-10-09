@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт для перевірки стилів</title>
-    <link href="../[]Ruslan/stylesheet.css" rel="stylesheet">
+    <link href="../[]Ruslan/lazy.css" rel="stylesheet">
 </head>
-<body>
+<body class="about__content-text">
     
 
-    <img width="250" height="250" src="https://html5book.ru/wp-content/uploads/2014/07/html_links.png" class="attachment-page-image size-page-image wp-post-image" alt="" loading="lazy">    
-    <nav>
+    <img class="icon" width="250" height="250" src="https://html5book.ru/wp-content/uploads/2014/07/html_links.png" class="attachment-page-image size-page-image wp-post-image" alt="" loading="lazy">    
+    <nav class="main-nav">
         <ul class="nav">
             <li><a href="#">Головна</a></li>
             <li><a href="#">Контакти</a></li>
@@ -28,20 +28,26 @@
         </fieldset>
         <input required="заповніть поле" placeholder="Ім*я" type="text" name="name">
         <input required="заповніть поле" placeholder="Назва команди" type="text" name="unit">
-        <button type="submit" value="send">
+        <button class="main-info__button" type="submit" value="send">
             Відправити
         </button>
-    
+    </form>
     
 
-    <div>
+        <div class="main-info">
         Панель навигации играет важную роль на сайте, так как обеспечиват переходы между страницами сайта или на внешние ресурсы. Рассмотрим, как создать простенькую панель навигации.
 
         Фактически панель навигации - это набор ссылок, часто в виде ненумерованного списка. Панели навигации бывают самыми различными: вертикальными и горизонтальными, одноуровневыми и многоуровневыми, но в любом случае в центре каждой навигации находится элемент <a>. Поэтому при создании панели навигации мы можем столкнуться с рядом трудностей, которые вытекают из ограничений элемента ссылки. А именно, элемент <a> является строчным, а это значит, что мы не можем указать для него ширину, высоту, отступы. По ширине ссылка автоматически занимает то место, которое ей необходимо.
         </div>
     </body>
     <hr/>
-    <footer>
-        Зроблено на скору руку, але це не точно. <a href="#"> Тик сюди</a>
+<footer class="footer-text__size-mob, footer-condition, footer-text, footer-content__size-mob, footer-content">
+    <p><h5> Підвальчик</h5></p>
+   
+    Зроблено на скору руку, але це не точно.
+    <br>
+    <a class="hr" href="#">Тик сюди</a>
+    
+    <p class="footer-copyright ">Copyright Руслан</p>
 </footer>
 </html>
