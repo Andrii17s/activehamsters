@@ -93,7 +93,7 @@ nav a {
 /*Content area #1*/
 
 .contentAreaVideos {
-	width: 80%;
+	width: 90%;
 	align-self: center;
 	position: relative;
 	background: #f0d6ac;
@@ -107,7 +107,7 @@ nav a {
 }
 
 .contentAreaVideos p {
-	padding: 2% 0px;
+	padding: 2% 0;
 	line-height: 30px;
 }
 
@@ -153,7 +153,6 @@ nav a {
 /*Footer*/
 
 footer {
-	opacity: 0.6;
 	background-color: #262626;
 	width: 100%;
 	height: auto;
@@ -290,7 +289,7 @@ footer {
 }
 
 .greenLink:link {
-  	color: yellow;
+  	color: maroon;
   	background-color: transparent;
   	text-decoration: none;
 }
@@ -308,7 +307,7 @@ footer {
 }
 
 .greenLink:active {
-  	color: maroon;
+  	color: yellow;
   	background-color: transparent;
   	text-decoration: underline;
 }
