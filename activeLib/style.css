@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/*Базовий койтейнер для рядів з колонками*/
+.lh-container {
+	margin: 0 auto;
+	padding: 50px 15px;
+	width: 100%;
+	height: 100vh;
+}
+
+/*Базовий контейнер ряду*/
+.lh-row {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	padding: 1rem 0;
+}
+
+/*Базові колонки та колонки для девайсів <576px*/
+.lh-col-12,
+.lh-col-11,
+.lh-col-10,
+.lh-col-9,
+.lh-col-8,
+.lh-col-7,
+.lh-col-6,
+.lh-col-5,
+.lh-col-4,
+.lh-col-3,
+.lh-col-2,
+.lh-col-1 {
+	flex-basis: 100%;
+	border: 1px solid red;
+	padding: 0.5rem;
+}
+
+/*Девайси з екраном  >=576px*/
+@media (min-width: 576px) {
+
+	.lh-row {
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+
+	.lh-col-11 {
+		flex-basis: 92%;
+	}
+	.lh-col-10 {
+		flex-basis: 90%;
+	}
+	.lh-col-9 {
+		flex-basis: 74%;
+	}
+	.lh-col-8 {
+		flex-basis: 68%;
+	}
+	.lh-col-7 {
+		flex-basis: 58%;
+	}
+	.lh-col-6 {
+		flex-basis: 46%;
+	}
+	.lh-col-5 {
+		flex-basis: 40%;
+	}
+	.lh-col-4 {
+		flex-basis: 32%;
+	}
+	.lh-col-3 {
+		flex-basis: 24%;
+	}
+	.lh-col-2 {
+		flex-basis: 16%;
+	}
+	.lh-col-1 {
+		flex-basis: 8%;
+	}
+}
+
+/*Девайси з екраном  576-992, 992-1200, 1200-1400px*/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1400px){
+
+	.lh-row {
+		flex-flow: row nowrap;
+	}
+
+	.lh-col-11 {
+		flex-basis: 88%;
+	}
+	.lh-col-10 {
+		flex-basis: 86%;
+	}
+	.lh-col-9 {
+		flex-basis: 70%;
+	}
+	.lh-col-8 {
+		flex-basis: 60%;
+	}
+	.lh-col-7 {
+		flex-basis: 54%;
+	}
+	.lh-col-6 {
+		flex-basis: 42%;
+	}
+	.lh-col-5 {
+		flex-basis: 36%;
+	}
+	.lh-col-4 {
+		flex-basis: 28%;
+	}
+	.lh-col-3 {
+		flex-basis: 20%;
+	}
+	.lh-col-2 {
+		flex-basis: 12%;
+	}
+	.lh-col-1 {
+		flex-basis: 4%;
+	}
+}
+
+.body-flex {
+	display: flex;
+	justify-content: stretch;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	min-height: 600px;
+	border: 1px red solid;
+}
+
+.header-flex {
+	min-height: 10%;
+	display: flex;
+	width: 100%;
+	border: 1px black solid;
+}
+
+.body-flex-div {
+	flex-wrap: wrap;
+	min-height: 80%;
+	display: flex;
+	width: 90%;
+	border: 1px black solid;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-flex {
+	min-height: 10%;
+	display: flex;
+	width: 100%;
+	border: 1px black solid;
+}
+
+.cell-12 {
+	margin-top: 10px;
+	margin-left: 10px;
+	display: flex;
+	height: 25%;
+	border: 1px black solid;
+	min-width: calc(100%/6);
+}
+
+.title {
+	display: none;
+}
