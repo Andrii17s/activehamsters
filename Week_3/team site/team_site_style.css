@@ -8,11 +8,13 @@ body{
     background-image: url(https://miro.medium.com/max/690/0*BbEpyjlvuOup5LIc.jpeg);
     background-repeat: repeat-x;
     background-size: 100% 100%;
+    padding: 0.3em;
     
 }
 
 .header{
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto;
     background-color: rgb(66, 65, 65);
     width: 100%;
     height: 120px;
@@ -23,19 +25,21 @@ body{
 }
 
 .container-1, .logo, .head-contacts{
-    display: flex;
-    padding: 1px;
-    border: 1px solid silver;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0em;
+    border: 0.1em solid silver;
 }
-.logo{
+/*.logo{
     flex: 1;
 }
 .head-contacts{
     flex: 8;
 }
+*/
 .google{
-    display: flex;
-    text-align: center;
+    /*display: flex;
+    text-align: center;*/
     border: 1px solid red;
     flex: 5;
     position: absolute; 
@@ -46,8 +50,8 @@ body{
 
 }
 .email{
-    display: flex;
-    text-align: center;
+    /*display: flex;
+    text-align: center;*/
     border: 1px solid rgb(64, 209, 7);
     flex: 5;
     position: absolute; 
@@ -57,8 +61,8 @@ body{
     font-size: 25px;
 }
 .phone{
-    display: flex;
-    text-align: center;
+    /*display: flex;
+    text-align: center;*/
     border: 1px solid rgb(64, 209, 7);
     flex: 7;
     position: absolute; 
@@ -68,10 +72,10 @@ body{
     font-size: 25px;
 }
 .nav-1{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   border: 1px solid rgb(37, 7, 209);
-  align-items: center;
-  justify-content: space-around;
+  
 }
 .nav-1 a{
     font-family: Arial;
@@ -117,15 +121,16 @@ body{
 	padding-left: 10px;
 }
 .about-us{
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     padding: 1px;
     border: 1px solid rgb(37, 7, 209);
     background-color:#fff;
     align-items: center;
-    justify-content: space-around;
+    
 }
 .text-us{
-    flex: 2;
+    
     border: 1px solid red;
 }
 .text-us h2{
@@ -139,23 +144,22 @@ body{
 }
 .img-laptop{
     border: 1px solid red;
-    flex: 1;
+    
 }
 
 .title-team {
-    display: flex;
+    display: grid;
     padding: 1px;
     border: 1px solid rgb(209, 7, 68);
     background-color:rgb(251, 252, 253);
-    align-items: center;
-    justify-content: space-around;
+    justify-items: center;
 }
 .conteynre-3 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     padding: 10px;
     border: 1px solid rgb(7, 247, 59);
-    align-items: stretch;
-    justify-content: space-around;
+
     background-color:rgb(255, 254, 254);
 }
 
@@ -181,12 +185,12 @@ body{
 }
 
 .portfolio {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 1px;
     border: 1px solid rgb(179, 7, 209);
     background-color:rgb(251, 252, 253);
-    align-items: center;
-    justify-content: space-around;
+    justify-items: center;
 }
 
 .foother {
@@ -198,10 +202,9 @@ body{
     left: 0;
 }
 .container-2{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     border: 1px solid rgb(37, 7, 209);
     align-items: center;
-    justify-content: space-around;
     
 }
-
