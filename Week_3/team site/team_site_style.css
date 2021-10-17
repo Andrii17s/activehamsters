@@ -62,7 +62,7 @@ body{
     border: 1px solid rgb(64, 209, 7);
     flex: 7;
     position: absolute; 
-    left: 40%;
+    left: 45%;
     line-height: 90px; 
     color: #fff;
     font-size: 25px;
@@ -146,7 +146,45 @@ body{
     display: flex;
     padding: 1px;
     border: 1px solid rgb(209, 7, 68);
-    background-color:rgb(146, 148, 151);
+    background-color:rgb(251, 252, 253);
+    align-items: center;
+    justify-content: space-around;
+}
+.conteynre-3 {
+    display: flex;
+    padding: 10px;
+    border: 1px solid rgb(7, 247, 59);
+    align-items: stretch;
+    justify-content: space-around;
+    background-color:rgb(255, 254, 254);
+}
+
+.person1, .person2, .person3, .person4 {
+    padding: 10px;
+    border: 1px solid rgb(11, 7, 247);
+    text-align: center; 
+}
+.about-person{
+    font-size: 20px;
+    font-style: Arial, sans-serif;
+    background-color: brown;
+}
+.button-person{
+    display: inline-block;
+    background: #0687f8; 
+    font-size: 20px;
+    font-style: Arial, sans-serif;
+    color: #fff; 
+    padding: 1rem 1.5rem; 
+    text-decoration: none; 
+    border-radius: 3px; 
+}
+
+.portfolio {
+    display: flex;
+    padding: 1px;
+    border: 1px solid rgb(179, 7, 209);
+    background-color:rgb(251, 252, 253);
     align-items: center;
     justify-content: space-around;
 }
