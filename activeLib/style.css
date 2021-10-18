@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	display: flex;
+	/*display: flex;*/
 }
 
 body {
@@ -11,18 +11,16 @@ body {
 
 /*Базовий койтейнер для рядів з колонками*/
 .lh-container {
-	margin: 0 auto;
-	padding: 50px 15px;
+	margin: 0 0;
+	padding: 0 0;
 	width: 100%;
-	height: 100vh;
 }
 
 /*Базовий контейнер ряду*/
 .lh-row {
 	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	padding: 1rem 0;
+	flex-flow: column nowrap;
+	justify-content: space-around;
 }
 
 /*Базові колонки та колонки для девайсів <576px*/
@@ -39,16 +37,14 @@ body {
 .lh-col-2,
 .lh-col-1 {
 	flex-basis: 100%;
-	border: 1px solid red;
-	padding: 0.5rem;
 }
 
 /*Девайси з екраном  >=576px*/
 @media (min-width: 576px) {
 
 	.lh-row {
-		flex-flow: row nowrap;
-		justify-content: space-between;
+		flex-flow: column nowrap;
+		justify-content: space-around;
 	}
 
 	.lh-col-11 {
@@ -92,7 +88,8 @@ and (min-device-width: 768px)
 and (max-device-width: 1400px){
 
 	.lh-row {
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
+		justify-content: space-around;
 	}
 
 	.lh-col-11 {
