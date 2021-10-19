@@ -30,30 +30,24 @@ body{
     font-size: 25px;
 
 }
-.email{
-    text-align: center;
+.email-phone{
     border: 1px solid rgb(64, 209, 7);
     line-height: 90px;
     color: #FFFFFF;
     font-size: 25px;
 }
-.phone{
-    text-align: center;
-	  vertical-align: center;
+.phone {
     border: 1px solid rgb(64, 209, 7);
     color: #FFFFFF;
     font-size: 25px;
 }
-
 .nav-1 {
 	background-color: rgb(66, 65, 65);
 	border: 1px solid rgb(37, 7, 209);
-	align-items: center;
 	vertical-align: center;
 }
 
 .nav-1 a{
-    font-family: Arial, sans-serif;
     color: #FFFFFF;
     font-size: 20px;
 }
@@ -63,7 +57,6 @@ body{
     position: relative;
 }
 .nav-2 {
-    font-family: 'Josefin Slab', Arial, sans-serif;
     color: #FFFFFF;
     margin: 0 auto;
     font-size: 50px;
@@ -102,7 +95,7 @@ body{
     padding: 1px;
     border: 1px solid rgb(37, 7, 209);
     background-color: #FFFFFF;
-    align-items: center;
+    display: flex;
 }
 
 .text-us {
@@ -116,12 +109,30 @@ body{
 }
 .text-us p {
     font-size: 20px;
-	  font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 .img-laptop {
     border: 1px solid red;
-	  width: 100%;
+	width: 100%;
+}
+
+.specialists{
+    display: flex;
+    background-color: rgb(5, 5, 5);
+    border: 1px solid rgb(241, 63, 63);
+    align-items: center;
+} 
+.specialists div{
+    padding: 10px;
+    border: 1px solid silver;
+}
+.text-specialists{
+    text-align: left;
+    color: rgb(251, 249, 249);
+}
+.specialists picture{
+    
 }
 
 .title-team {
@@ -134,7 +145,7 @@ body{
     padding: 10px;
     border: 1px solid rgb(7, 247, 59);
     background-color:rgb(255, 254, 254);
-	  width: 100%;
+	width: 100%;
 }
 
 .person {
@@ -151,7 +162,6 @@ body{
     display: inline-block;
     background: #0687f8;
     font-size: 20px;
-    font-style: Arial, sans-serif;
     color: #FFFFFF;
     padding: 1rem 1.5rem;
     text-decoration: none;
@@ -164,6 +174,60 @@ body{
     background-color:rgb(251, 252, 253);
     text-align: center;
 }
+.conteynre-4{
+    display: flex;
+    background-color: rgb(248, 248, 248); 
+}
+.conteynre-4 div{
+    padding: 10px;
+    border: 1px solid silver;
+}
+.site-1, .site-2, .site-3, .site-4, .site-5{
+    flex: 1;
+    text-align: center;
+}
+.button-site {
+    display: inline-block;
+    background: #0687f8;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.contacts-team{
+    display: flex;
+    background-color: rgb(251, 251, 251);
+    
+}
+.contacts-team div{
+    padding: 10px;
+    border: 1px solid rgb(37, 7, 209);
+}
+.registration{
+    display: table-cell;
+    flex: 3;
+}
+.write-me{
+    flex: 4;
+}
+
+
+tbody,  table, td, th {  
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 15px;
+    width: 2%;
+  }
 
 .footer {
     background-color: rgb(66, 65, 65);
