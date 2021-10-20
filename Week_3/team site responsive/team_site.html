@@ -7,6 +7,9 @@
 	<title>Team site</title>
 	<link rel="stylesheet" type="text/css" href="team_site_style.css">
 	<link rel="stylesheet" type="text/css" href="../../activeLib/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="social-style-botton.css">
+	<link rel="stylesheet" href="form-botton-style.css">
 </head>
 <body>
 
@@ -17,28 +20,30 @@
 			<div class="lh-col-2">
 				<img src="img/logo.png" alt="logo" width="150px" height="90px">
 			</div>
-			<div class="lh-col-3 email-phone">
-				<a href="activehamsters@gmail.com">activehamsters@gmail.com</a>
-			</div>
-			<div class="lh-col-3 email-phone">
-				<a href="+3809647420175">+3809647420175</a>
-			</div>
-			<div class="lh-col-2 google">
-				<a href="https://www.google.com.ua/?hl=uk">пошук</a>
+			
+			<div class="social-buttons">
+				
+				<div><a href="#" class="fa fa-facebook"></a></div>
+    			<div><a href="#" class="fa fa-twitter"></a></div>
+				<div><a href="https://t.me/joinchat/FgU07tE64jlhNjgy" class="fa fa-telegram"></a></div>
+				<div><a href="https://github.com/Andrii17s/activehamsters" class="fa fa-github"></a></div>
+    			<div><a href="#" class="fa fa-youtube"></a></div>
+    			<div><a href="#" class="fa fa-instagram"></a></div>
+    			<div><a href="https://www.google.com.ua/?hl=uk" class="fa fa-google"></a></div>
 			</div>
 		</div>
 		<div class="lh-row">
 			<div class="lh-col-3 nav-1">
-				<a href="#">Про нас</a>
+				<a href="#team">Про нас</a>
 			</div>
 			<div class="lh-col-3 nav-1">
-				<a href="#">Учасники команди</a>
+				<a href="#developers">Учасники команди</a>
 			</div>
 			<div class="lh-col-3 nav-1">
-				<a href="#">Проекти</a>
+				<a href="#projects">Проекти</a>
 			</div>
 			<div class="lh-col-3 nav-1">
-				<a href="#">Контакти</a>
+				<a href="#contacts">Контакти</a>
 			</div>
 		</div>
 	</div>
@@ -73,7 +78,7 @@
 			<div class="lh-row">
 				<div class="lh-col-9">
 					<div class="text-us">
-						<h2>Active Hamsters Factory - розробка сайтів та їх просування в пошуковій системі Google</h2>
+						<h2 id="team">Active Hamsters Factory - розробка сайтів та їх просування в пошуковій системі Google</h2>
 						<br>
 						<p>Фабрика Сайтів - це професійна розробка веб-сайтів, інтернет магазинів , веб сервісів та інтернет
 							порталів, а також компанія, яка надає послуги по пошуковому просуванню та управління репутацією в
@@ -116,7 +121,7 @@
 	<div class="lh-row">
 		<div class="lh-col-12">
 			<div class="title-team">
-				<h1>TEAM Active Hamsters</h1>
+				<h1 id="developers">TEAM Active Hamsters</h1>
 			</div>
 		</div>
 	</div>
@@ -170,7 +175,7 @@
 		<div class="lh-row">
 			<div class="lh-col-12">
 				<div class="portfolio">
-					<h1>Портфоліо наших проектів</h1>
+					<h1 id="projects">Портфоліо наших проектів</h1>
 				</div>
 			</div>
 		</div>
@@ -214,7 +219,7 @@
 <div class="lh-container">
 	<div class="lh-row title-contacts">
 		<div>
-			<h1>Контакти</h1>
+			<h1 id="contacts">Контакти</h1>
 		</div>
 	</div>
 	<div class="lh-row contacts-team">
@@ -315,7 +320,9 @@
 							</table>
 						</div>
 					</fieldset>
-					<input type="submit" value="Надіслати">
+					<div class="form-botton">
+						<button class="btn btn1">Зареєструватися</button>
+					  </div>
 				</form>
 			</div>
 		</div>
@@ -351,7 +358,9 @@
 							</table>
 						</div>
 					</fieldset>
-					<input type="submit" value="Надіслати">
+					<div class="form-botton">
+						<button class="btn btn1">Надіслати</button>
+					  </div>
 				</form>
 			</div>
 		</div>
