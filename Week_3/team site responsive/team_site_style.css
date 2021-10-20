@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+	align-items:center;
 }
 
 body {
@@ -22,27 +23,18 @@ body {
 	border: 1px solid silver;
 }
 
-.google {
-	text-align: center;
-	border: 1px solid red;
-	line-height: 90px;
-	color: #FFFFFF;
-	font-size: 25px;
 
-}
 
-.email-phone {
+
+.social-buttons{
+	justify-content: space-around;
+	display: flex;
+	align-items:center;
 	border: 1px solid rgb(64, 209, 7);
-	line-height: 90px;
-	color: #FFFFFF;
-	font-size: 25px;
+	padding: 30px;
+	flex: 2;
 }
 
-.phone {
-	border: 1px solid rgb(64, 209, 7);
-	color: #FFFFFF;
-	font-size: 25px;
-}
 
 .nav-1 {
 	background-color: rgb(66, 65, 65);
