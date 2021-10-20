@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'posterio_n_sansregular';
+    src: url('../fonts/acca_set-webfont.woff2') format('woff2'),
+         url('../fonts/acca_set-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
