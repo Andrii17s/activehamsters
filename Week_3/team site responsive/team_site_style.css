@@ -1,71 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-	  box-sizing: border-box;
-    text-decoration: none;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
 }
 
-body{
-    background-image: url(https://miro.medium.com/max/690/0*BbEpyjlvuOup5LIc.jpeg);
-    background-repeat: repeat-x;
-    background-size: 100% 100%;
+body {
+	background-image: url(https://miro.medium.com/max/690/0*BbEpyjlvuOup5LIc.jpeg);
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
 }
 
-.header{
-    background-color: rgb(66, 65, 65);
-    background-size: cover;
-    z-index: 12;
+.header {
+	background-color: rgb(66, 65, 65);
+	background-size: cover;
+	z-index: 12;
 }
 
-.container-1, .logo, .head-contacts{
-    padding: 1px;
-    border: 1px solid silver;
+.container-1, .logo, .head-contacts {
+	padding: 1px;
+	border: 1px solid silver;
 }
 
-.google{
-    text-align: center;
-    border: 1px solid red;
-    line-height: 90px;
-    color: #FFFFFF;
-    font-size: 25px;
+.google {
+	text-align: center;
+	border: 1px solid red;
+	line-height: 90px;
+	color: #FFFFFF;
+	font-size: 25px;
 
 }
-.email-phone{
-    border: 1px solid rgb(64, 209, 7);
-    line-height: 90px;
-    color: #FFFFFF;
-    font-size: 25px;
+
+.email-phone {
+	border: 1px solid rgb(64, 209, 7);
+	line-height: 90px;
+	color: #FFFFFF;
+	font-size: 25px;
 }
+
 .phone {
-    border: 1px solid rgb(64, 209, 7);
-    color: #FFFFFF;
-    font-size: 25px;
+	border: 1px solid rgb(64, 209, 7);
+	color: #FFFFFF;
+	font-size: 25px;
 }
+
 .nav-1 {
 	background-color: rgb(66, 65, 65);
 	border: 1px solid rgb(37, 7, 209);
 	vertical-align: center;
 }
 
-.nav-1 a{
-    color: #FFFFFF;
-    font-size: 20px;
+.nav-1 a {
+	color: #FFFFFF;
+	font-size: 20px;
 }
+
 .menu {
-    padding: 0;
-    margin: 0 0 10px 0;
-    position: relative;
+	padding: 0;
+	margin: 0 0 10px 0;
+	position: relative;
 }
+
 .nav-2 {
-    color: #FFFFFF;
-    margin: 0 auto;
-    font-size: 50px;
-    display: block;
+	color: #FFFFFF;
+	margin: 0 auto;
+	font-size: 50px;
+	display: block;
 }
 
 .nav-2 li {
-    font-size: 50px;
-    display: block;
+	font-size: 50px;
+	display: block;
 }
 
 .nav-2 li a {
@@ -92,149 +97,191 @@ body{
 }
 
 .about-us {
-    padding: 1px;
-    border: 1px solid rgb(37, 7, 209);
-    background-color: #FFFFFF;
-    display: flex;
+	padding: 1px;
+	border: 1px solid rgb(37, 7, 209);
+	background-color: #FFFFFF;
+	display: flex;
 }
 
 .text-us {
-    border: 1px solid red;
+	border: 1px solid red;
 }
 
 .text-us h2 {
-    text-align: center;
-    font-size: 35px;
-    font-family: Arial, sans-serif;
+	text-align: center;
+	font-size: 35px;
+	font-family: Arial, sans-serif;
 }
+
 .text-us p {
-    font-size: 20px;
+	font-size: 20px;
 	font-family: Arial, sans-serif;
 }
 
 .img-laptop {
-    border: 1px solid red;
+	border: 1px solid red;
 	width: 100%;
 }
 
-.specialists{
-    display: flex;
-    background-color: rgb(5, 5, 5);
-    border: 1px solid rgb(241, 63, 63);
-    align-items: center;
-} 
-.specialists div{
-    padding: 10px;
-    border: 1px solid silver;
+.specialists {
+	background-color: rgb(5, 5, 5);
+	border: 1px solid rgb(241, 63, 63);
+	/*align-items: center;*/
 }
-.text-specialists{
-    text-align: left;
-    color: rgb(251, 249, 249);
+
+.specialists div {
+	padding: 5px;
+	/*border: 1px solid silver;*/
 }
-.specialists picture{
-    
+
+.text-specialists {
+	vertical-align: center;
+	text-align: center;
+	color: rgb(251, 249, 249);
+	border: 1px solid silver;
+}
+
+.specialists-picture {
+	width: 100%;
+	border: 1px solid silver;
 }
 
 .title-team {
-    padding: 1px;
-    border: 1px solid rgb(209, 7, 68);
-    background-color:rgb(251, 252, 253);
-    text-align: center;
+	padding: 1px;
+	border: 1px solid rgb(209, 7, 68);
+	background-color: rgb(251, 252, 253);
+	text-align: center;
 }
+
 .conteynre-3 {
-    padding: 10px;
-    border: 1px solid rgb(7, 247, 59);
-    background-color:rgb(255, 254, 254);
+	padding: 10px;
+	border: 1px solid rgb(7, 247, 59);
+	background-color: rgb(255, 254, 254);
 	width: 100%;
 }
 
 .person {
-    padding: 10px;
-    border: 1px solid rgb(11, 7, 247);
-    text-align: center;
+	padding: 10px;
+	border: 1px solid rgb(11, 7, 247);
+	text-align: center;
 }
+
 .about-person {
-    font-size: 20px;
-    font-style: Arial, sans-serif;
-    background-color: brown;
+	font-size: 20px;
+	font-style: Arial, sans-serif;
+	background-color: brown;
 }
+
 .button-person {
-    display: inline-block;
-    background: #0687f8;
-    font-size: 20px;
-    color: #FFFFFF;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
-    border-radius: 3px;
+	display: inline-block;
+	background: #0687f8;
+	font-size: 20px;
+	color: #FFFFFF;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	border-radius: 3px;
 }
 
 .portfolio {
-    padding: 1px;
-    border: 1px solid rgb(179, 7, 209);
-    background-color:rgb(251, 252, 253);
-    text-align: center;
+	padding: 1px;
+	border: 1px solid rgb(179, 7, 209);
+	background-color: rgb(251, 252, 253);
+	text-align: center;
 }
-.conteynre-4{
-    display: flex;
-    background-color: rgb(248, 248, 248); 
+
+.conteynre-4 {
+	/*display: flex;*/
+	background-color: rgb(248, 248, 248);
 }
-.conteynre-4 div{
-    padding: 10px;
-    border: 1px solid silver;
+
+.conteynre-4 div {
+	/*	padding: 10px;*/
+	border: 1px solid silver;
 }
-.site-1, .site-2, .site-3, .site-4, .site-5{
-    flex: 1;
-    text-align: center;
+
+.site-img {
+	/*flex: 1;*/
+	width: 100%;
+	text-align: center;
 }
+
 .button-site {
-    display: inline-block;
-    background: #0687f8;
-    font-size: 20px;
-    color: #FFFFFF;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
-    border-radius: 3px;
+	display: inline-block;
+	background: #0687f8;
+	font-size: 20px;
+	color: #FFFFFF;
+	/*padding: 1rem 1.5rem;*/
+	/*text-decoration: none;*/
+	border-radius: 3px;
 }
 
-.contacts-team{
-    display: flex;
-    background-color: rgb(251, 251, 251);
-    
-}
-.contacts-team div{
-    padding: 10px;
-    border: 1px solid rgb(37, 7, 209);
-}
-.registration{
-    display: table-cell;
-    flex: 3;
-}
-.write-me{
-    flex: 4;
+.contacts-team {
+	/*display: flex;*/
+	border: 1px solid rgb(179, 7, 209);
+	background-color: rgb(251, 251, 251);
 }
 
+.contacts-team div {
+	padding: 10px;
+	/*border: 1px solid rgb(37, 7, 209);*/
+}
 
-tbody,  table, td, th {  
-    border: 1px solid #ddd;
-    text-align: center;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    padding: 15px;
-    width: 2%;
-  }
+.registration {
+	border: 1px solid rgb(179, 7, 209);
+	/*justify-content: center;*/
+	/*display: table-cell;*/
+	/*flex: 3;*/
+}
+
+.write-me {
+	/*flex: 4;*/
+	border: 1px solid rgb(179, 7, 209);
+	justify-content: center;
+}
+
+.title-contacts {
+	padding: 1px;
+	border: 1px solid rgb(179, 7, 209);
+	background-color: rgb(251, 252, 253);
+	text-align: center;
+}
+
+/*tbody, table, td, th {
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	!*width: 100%;*!
+}
+
+th, td {
+	padding: 5px;
+	width: 2%;
+}*/
+
+.form-label {
+	text-align: right;
+	width: 100px;
+	white-space: nowrap;
+}
+
+.form-block {
+	display: inline-block;
+}
+
+.form-block input, select, textarea {
+	width: 100%;
+}
 
 .footer {
-    background-color: rgb(66, 65, 65);
-    background-size: cover;
+	background-color: rgb(66, 65, 65);
+	background-size: cover;
 }
+
 .container-2 {
-    border: 1px solid rgb(37, 7, 209);
+	border: 1px solid rgb(37, 7, 209);
 }
 
 .address, .new-customer, .regular-customer {
