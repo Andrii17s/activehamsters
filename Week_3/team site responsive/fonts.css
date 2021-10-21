@@ -1,0 +1,103 @@
+html {
+  font-family: "Rubik", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+/*-------Heading 1---------*/
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+}
+/*----------*/
+
+/*-------Heading 2-------*/
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+}
+/*----------*/
+
+/*-------Heading 3---------*/
+
+@media (max-width: 800px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 360px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
+/*----------*/
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*---------Footer---------*/
+@media (max-width: 800px) {
+  .container-2 p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .container-2 p {
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+  }
+}
+
+/*------------*/
+
+.container-2 p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*------Top navigation------*/
+
+@media (max-width: 800px) {
+  .nav-2 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+.nav-2 {
+  font-family: "Rubik", sans-serif;
+}
