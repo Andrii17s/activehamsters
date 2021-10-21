@@ -15,7 +15,7 @@ body {
 	padding: 0 0;
 	width: 100%;
 	text-align: center;
-	
+
 }
 
 /*Базовий контейнер ряду*/
@@ -23,6 +23,11 @@ body {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
+}
+
+/*Клас для зміни порядку блоків в моб. версії*/
+.lh-row__mob {
+	flex-direction: column-reverse;
 }
 
 /*Базові колонки та колонки для девайсів <576px*/
@@ -52,33 +57,43 @@ body {
 	.lh-col-11 {
 		flex-basis: 92%;
 	}
+
 	.lh-col-10 {
 		flex-basis: 90%;
 	}
+
 	.lh-col-9 {
 		flex-basis: 74%;
 	}
+
 	.lh-col-8 {
 		flex-basis: 68%;
 	}
+
 	.lh-col-7 {
 		flex-basis: 58%;
 	}
+
 	.lh-col-6 {
 		flex-basis: 46%;
 	}
+
 	.lh-col-5 {
 		flex-basis: 40%;
 	}
+
 	.lh-col-4 {
 		flex-basis: 32%;
 	}
+
 	.lh-col-3 {
 		flex-basis: 24%;
 	}
+
 	.lh-col-2 {
 		flex-basis: 16%;
 	}
+
 	.lh-col-1 {
 		flex-basis: 8%;
 	}
@@ -87,7 +102,7 @@ body {
 /*Девайси з екраном  576-992, 992-1200, 1200-1400px*/
 @media only screen
 and (min-device-width: 768px)
-and (max-device-width: 1400px){
+and (max-device-width: 1400px) {
 
 	.lh-row {
 		flex-flow: row wrap;
@@ -97,33 +112,43 @@ and (max-device-width: 1400px){
 	.lh-col-11 {
 		flex-basis: 88%;
 	}
+
 	.lh-col-10 {
 		flex-basis: 86%;
 	}
+
 	.lh-col-9 {
 		flex-basis: 70%;
 	}
+
 	.lh-col-8 {
 		flex-basis: 60%;
 	}
+
 	.lh-col-7 {
 		flex-basis: 54%;
 	}
+
 	.lh-col-6 {
 		flex-basis: 42%;
 	}
+
 	.lh-col-5 {
 		flex-basis: 36%;
 	}
+
 	.lh-col-4 {
 		flex-basis: 28%;
 	}
+
 	.lh-col-3 {
 		flex-basis: 20%;
 	}
+
 	.lh-col-2 {
 		flex-basis: 12%;
 	}
+
 	.lh-col-1 {
 		flex-basis: 4%;
 	}
@@ -169,7 +194,7 @@ and (max-device-width: 1400px){
 	display: flex;
 	height: 25%;
 	border: 1px black solid;
-	min-width: calc(100%/6);
+	min-width: calc(100% / 6);
 }
 
 .title {
