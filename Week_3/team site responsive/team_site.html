@@ -20,6 +20,7 @@
 	<style>
 		:root {
   			--main-font-size: 16px;
+			--font-family: "Rubik";
 		}
 		
 
@@ -28,6 +29,15 @@
 			font-family: "Montserrat", sans-serif;
   			font-size: var(--main-font-size);
 		}
+		
+		h1 {
+  			font-family: var(--font-family), sans-serif;
+		}
+		
+		h2 {
+  			font-family: var(--font-family), sans-serif;
+		}
+		
 	</style>
 	
 	<script>
@@ -39,6 +49,15 @@
 		var size = rs.getPropertyValue('--main-font-size')
   		r.style.setProperty('--main-font-size', "80px");
 	}
+		
+	function rubik_set() {
+  		r.style.setProperty('--font-family', "Rubik");
+	}
+		
+	function festive_set() {
+  		r.style.setProperty('--font-family', "Festive");
+	}
+		
 	</script>
 	
 </head>
@@ -141,6 +160,14 @@
 					<br>
 					<p>НАШІ КРАЩІ СПЕЦІАЛІСТИ</p>
 				</div>
+				<tr>
+					<td><label class="form-label" for="font">Шрифт:</label></td>
+					<td><select id="font" name="font" onChange="if (this.selectedIndex==2) festive_set(); if (this.selectedIndex==1) rubik_set();">
+						<option value="-">-</option>
+						<option value="Rubik" onclick="rubik_set()" value="rubik">Rubik</option>
+						<option value="Festive" onclick="festive_set()" value="festive">Festive</option>
+					</select></td>
+				</tr>
 			</div>
 			<div class="lh-col-9">
 				<div class="specialists-picture">
