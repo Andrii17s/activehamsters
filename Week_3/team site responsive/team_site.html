@@ -16,6 +16,31 @@
 	<link rel="stylesheet" type="text/css" href="../../activeLib/style.css">
 	<link rel="stylesheet" href="fonts.css">
 	<link rel="icon" href="img/favicon.png" type="image/png">
+	
+	<style>
+		:root {
+  			--main-font-size: 16px;
+		}
+		
+
+		html {
+			font-family: "Rubik", sans-serif;
+			font-family: "Montserrat", sans-serif;
+  			font-size: var(--main-font-size);
+		}
+	</style>
+	
+	<script>
+		
+	var r = document.querySelector(':root');
+
+	function myFunction_set() {
+  		var rs = getComputedStyle(r);
+		var size = rs.getPropertyValue('--main-font-size')
+  		r.style.setProperty('--main-font-size', "80px");
+	}
+	</script>
+	
 </head>
 <body>
 
@@ -328,7 +353,7 @@
 						</div>
 					</fieldset>
 					<div class="form-botton">
-						<button class="btn btn1">Зареєструватися</button>
+						<button onclick="myFunction_set()" class="btn btn1">Зареєструватися</button>
 					</div>
 				</form>
 			</div>

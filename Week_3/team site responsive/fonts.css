@@ -1,7 +1,11 @@
+:root {
+  --main-font-size: 16px;
+}
+
 html {
   font-family: "Rubik", sans-serif;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: var(--main-font-size);
 }
 
 /*-------Heading 1---------*/
