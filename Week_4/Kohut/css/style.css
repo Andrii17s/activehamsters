@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.ah-container {
+  max-width: 100%;
+  min-height: auto;
+  background-color: #2b2727; //вкажи потрібний варіант
+}
+
+.ah-row {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  /* flex: 100%; */
+}
+
+.partisipants/* {
+   display: flex;
+  flex-direction: column;
+  flex-flow: row wrap; 
+  justify-content: center;
+} */
+
+.squad-img {
+  display: flex;
+  background-color: #393535;
+  /* display: flex;*/
+  /* margin: 245px 245px 400px 245px; */
+  flex: 65%;
+  /* width: 70%;
+  height: 50%; */
+}
+
+.squad-unit {
+  display: flex;
+  justify-content: center;
+}
+
+.squad-unit-lt {
+  /* display: flex; */
+}
+
+.squad-unit-rt {
+  /* display: flex; */
+  border-left: 2px solid #ffd600;
+}
+
+/* .squad-line {
+  display: inline;
+  height: 100%;
+  margin: 10px;
+  border-left: 2px solid #ffd600;
+} */
+
+.ah-lst-tp-n {
+  list-style-type: none;
+}
+
+.ah-text-algn-lt {
+  text-align: left;
+}
+
+.ah-text-algn-rt {
+  text-align: right;
+}
+
+.ah-clr-w {
+  color: #ffffff;
+}
