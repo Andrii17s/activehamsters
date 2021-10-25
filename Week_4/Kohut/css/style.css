@@ -10,66 +10,57 @@ body {
 .ah-container {
   max-width: 100%;
   min-height: auto;
-  background-color: #2b2727; //вкажи потрібний варіант
+  background-color: #2b2727;
 }
 
 .ah-row {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-  /* flex: 100%; */
+  align-items: center;
 }
-
-.partisipants/* {
-   display: flex;
-  flex-direction: column;
-  flex-flow: row wrap; 
-  justify-content: center;
-} */
 
 .squad-img {
   display: flex;
-  background-color: #393535;
-  /* display: flex;*/
-  /* margin: 245px 245px 400px 245px; */
-  flex: 65%;
-  /* width: 70%;
-  height: 50%; */
+  width: 65%;
+  padding: 7.2rem 0 4.5rem 0;
 }
 
 .squad-unit {
   display: flex;
   justify-content: center;
+  padding-bottom: 6.75rem;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.3rem;
 }
 
 .squad-unit-lt {
-  /* display: flex; */
+  padding-right: 2.3rem;
 }
 
 .squad-unit-rt {
-  /* display: flex; */
-  border-left: 2px solid #ffd600;
+  border-left: 5px solid #ffd600;
+  padding-left: 2.3rem;
 }
 
-/* .squad-line {
-  display: inline;
-  height: 100%;
-  margin: 10px;
-  border-left: 2px solid #ffd600;
-} */
-
-.ah-lst-tp-n {
+/* -- прибирає значки списку -- */
+.ah-lst-tp_n {
   list-style-type: none;
 }
 
-.ah-text-algn-lt {
+/* -- вирівнювання тексту по лівому краю -- */
+.ah-txt-algn_lt {
   text-align: left;
 }
 
-.ah-text-algn-rt {
+/* -- вирівнювання тексту по правому краю -- */
+.ah-txt-algn_rt {
   text-align: right;
 }
 
-.ah-clr-w {
+/* -- колір тексту білий -- */
+.ah-clr_w {
   color: #ffffff;
 }
