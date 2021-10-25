@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
-    <div class="ah-main-cont-ord">
+    <section class="ah-main-cont-ord">
         <div class="ah-ord-bl">
             <div class="ah-h1-v1"><h2>Бажаєте замовити сайт?</h2></div>
                 <div class="ah-ul">
@@ -31,15 +31,19 @@
             <form class="ah-ord-form1">
                 <div class="ah-input-flex">
                     <div class="ah-ord-form-pos">
-                        <input class="ah-input-radio" type="radio" name="site-1" value="1">Односторінковий "landing page"<br>
-                        <input class="ah-input-radio" type="radio" name="site-2" value="2">Багатосторінковий "more pages<br>
+                        <input type="radio" class="ah-input-radio" id="site1" name="site" value="landing">
+                        <label for="site1">Односторінковий "landing page"</label><br>
+                        <input type="radio" class="ah-input-radio" id="site2" name="site" value="more">
+                        <label for="site2">Багатосторінковий "more pages"</label><br>
                     </div>
                     <div class="ah-ord-form-pos">
-                        <input class="ah-input-radio" type="radio" name="site-3" value="3">Односторінковий "landing page"<br>
-                        <input class="ah-input-radio" type="radio" name="site-4" value="4">Багатосторінковий "more pages<br>
+                        <input type="radio" class="ah-input-radio" id="site3" name="site" value="online">
+                        <label for="site3">Онлайн-магазин</label><br>
+                        <input type="radio" class="ah-input-radio" id="site4" name="site" value="corporate">
+                        <label for="site4">Корпоративний сайт</label><br>
                     </div>
                 </div>
-                <div class="ah-bttn-pos"><button class="ah-bttn">замовити</button></div>
+                <div class="ah-bttn-pos"><button class="ah-btn">замовити</button></div>
             </form>
         </div>
         <div class="ah-ord-bl-form2">
@@ -48,9 +52,9 @@
             <form class="ah-ord-form2">
                 <input class="ah-input-text" type="text" name="name" placeholder="Ваш телефон">
                 <input class="ah-input-text" type="text" name="name" placeholder="Ваше ім'я">
-                <input class="ah-input-sub" type="submit">
+                <input class="ah-btn-submit" type="submit">
             </form>
         </div>
-    </div>
+    </section>
 </body>
 </html>
