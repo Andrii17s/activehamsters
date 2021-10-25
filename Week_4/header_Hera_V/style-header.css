@@ -1,0 +1,47 @@
+
+.ah-header_v1{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    position: sticky;
+    top: 0;
+    background-color: #393535;
+    height: 8.125rem;
+    
+    
+}
+.ah-header_v1 div{
+    padding: 1rem;
+    
+}
+.ah-header_v1 div.ah-link_v1{
+    justify-items: center;
+    align-items: center;
+}
+.ah-link_v1{ 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+}
+.ah-link-botton_v1{
+    color: white;
+    text-decoration: none;
+    background: #393535;
+    border: 1px solid #FFD600;
+}
+a:link, a:visited {
+    padding: 0.875rem 2.8125rem;
+    font-size: 1.56rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .5625rem;
+}
+a:hover{
+    background-color: #FFD600;
+    color: black;
+}
+.ah-logo_v1{
+    text-align: center;
+}
+.ah-logo_v1, img{
+    width: 21.71375rem;
+    height: 6.25rem;
+} 
