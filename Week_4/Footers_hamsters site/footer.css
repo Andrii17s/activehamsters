@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+.ah-wrapper-ftr {
+    min-height: 100%;
+    display: flex;
+    flex-direction:  column;
+}
+.ah-main-ftr {
+    flex: 1 1 auto;
+}
+.ah-footer {
+    display:  flex;
+    background-color: #393535;
+    color: #ffffff;
+    padding: 1em;
+    align-items: flex-end;
+}
+.ah-container-ftr_1{
+    flex:  2;
+}
+.ah-container-ftr_2{
+    flex: 3;
+}
