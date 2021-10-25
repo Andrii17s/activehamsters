@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.ah-main-cont-ord {
+  background-color: #2b2727;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ah-ord-bl {
+  background-color: #2b2727;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ah-ord-bl-form1 {
+}
+
+.ah-ord-bl-form2 {
+  padding: 15px;
+  background-color: #2b2727;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ah-p-v1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin: 1rem;
+}
+
+.ah-ord-form-pos {
+  padding: 1rem;
+  line-height: 1.7rem;
+}
+
+/*-------Headings-------*/
+
+.ah-h1-v1 {
+  color: #ffd600;
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.ah-h3-v1 {
+  color: #ffd600;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+/*-----------------------*/
+
+.ah-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.ah-lst-tp-n {
+  list-style-type: none;
+}
+
+.ah-ul1-v1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: right;
+  line-height: 1.8rem;
+  padding-right: 1.8rem;
+  border-right: 5px solid #ffd600;
+}
+
+.ah-ul2-v1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  padding-left: 1.8rem;
+}
+
+/*---------Forms----------*/
+
+.ah-ord-form1 {
+  width: 100%;
+  background-color: #393535;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.ah-ord-form2 {
+  width: 100%;
+  background-color: #393535;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+/*-----------------------*/
+
+/*--------Inputs---------*/
+
+.ah-input-radio {
+}
+
+.ah-input-text {
+  color: #ffd600;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #2a2727;
+  border-radius: 9px;
+  border: none;
+}
+
+.ah-input-text placeholder {
+  color: #ffd600;
+}
+
+.ah-input-sub {
+  color: #ffd600;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #393535;
+  text-align: center;
+  border-radius: 9px;
+  border: 1px solid #ffd600;
+}
+
+.ah-input-flex {
+  display: flex;
+  padding-bottom: 1rem;
+  color: #ffd600;
+  font-size: 0.9rem;
+}
+
+.ah-bttn-pos {
+  display: flex;
+}
+
+.ah-bttn {
+  color: #ffd600;
+  font-weight: 700;
+  padding: 10px 76px;
+  font-size: 1.5rem;
+  background-color: #393535;
+  text-align: center;
+  border-radius: 9px;
+  border: 1px solid #ffd600;
+}
+/*-----------------------*/

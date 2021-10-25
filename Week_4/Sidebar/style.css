@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*Базовий шрифт*/
+html {
+	font-size: 1rem;
+	font: Montserrat;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+.ah-container {
+	max-width: 100%;
+	min-height: auto;
+	background-color: #2B2727;
+}
+
+.ah-row {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+/*Для розробника сайдбару*/
+.ah-sidebar {
+	display: flex;
+	flex-direction: row;
+	background: #2A2727;
+	box-shadow: 0 4px 36px rgba(0, 0, 0, 0.25);
+	height: 100%;
+}
+
+/*Для розробника сайдбару*/
+.ah-sidebar h2 {
+	color: #FFD600;
+}
+
+.ah-sidebar-library {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.ah-link-sidebar-nav{
+    color: white;
+	margin-top: 10px;
+	padding: 11px 20px 9px 45px;
+	text-align: left;
+	align-items: center;
+    text-decoration: none;
+    min-width: 100%;
+    background: #393535;
+    box-sizing: border-box;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 0 9px 9px 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 30px;
+    text-transform: lowercase;
+	white-space:nowrap;
+}
+
+.ah-sidebar-library a:hover{
+    background-color: #FFD600;
+    color: black;
+}
+
+.ah-library-info {
+	display: flex;
+	flex: 80%;
+	max-width: 100%;
+	flex-direction: column;
+	padding-left: 2.19rem;
+	padding-bottom: 5.25rem;
+}
+
+.ah-library-info__title,
+.ah-library-info__setup,
+.ah-library-info__use {
+	max-width: 76%;
+}
+
+.ah-library-info__title {
+	margin-top: 5.25rem;
+}
+
+.ah-library-info h1 {
+	font-family: "Rubik", sans-serif;
+	color: #FFD600;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2.81rem;
+	line-height: 53.32px;
+}
+
+.ah-library-info h2 {
+	font-family: "Montserrat", sans-serif;
+	color: #FFD600;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 2.18rem;
+	line-height: 42.67px;
+	margin: 1.87rem 0;
+}
+
+.ah-library-info p {
+	font-family: "Montserrat", sans-serif;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.25rem;
+	line-height: 24.38px;
+}
+
+
