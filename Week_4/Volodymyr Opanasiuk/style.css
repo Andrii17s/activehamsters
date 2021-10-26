@@ -23,13 +23,19 @@ h1 {
 }
 
 /*Базовий елемент бібліотеки, не підлягає зміні*/
-h2 {
-	font-family: "Montserrat", sans-serif;
+.ah-btn {
+	background: #2A2727;
+	padding: 1.62rem 2rem;
+	border: 1px solid #FFD600;
+	border-radius: 8px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: Montserrat, sans-serif;
 	font-style: normal;
-	font-size: 2.18rem;
 	font-weight: 300;
-	line-height: 2.67rem;
-	color: #FFD600;
+	font-size: 1.56rem;
+	line-height: 1.9rem;
+	color: #FFFFFF;
 }
 
 /*Базовий елемент бібліотеки, не підлягає зміні*/
@@ -39,6 +45,7 @@ h2 {
 	font-size: 1.25rem;
 	font-weight: 300;
 	line-height: 1.52rem;
+	text-align: justify;
 	color: #FFFFFF;
 }
 
@@ -51,45 +58,32 @@ h2 {
 .ah-row {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-around;
 }
 
-/*Для розробника сайдбару*/
-.ah-sidebar {
+.ah-main {
 	display: flex;
+	flex-flow: column nowrap;
+	max-width: 41%;
+	min-height: auto;
+	margin-top: 8rem;
+	margin-left: 11rem;
+	margin-bottom: 15.25rem;
+}
+
+hr {
+	border-top: 3px solid #FFD600;
+	margin: 2.18rem 0 2.68rem 0;
+}
+
+.ah-content_btn {
+	text-align: center;
+	margin-top: 6rem;
+}
+
+.ah-main_title,
+.ah-main_content,
+.ah-main_btn {
 	max-width: 100%;
-	flex-direction: row;
-	flex: 20%;
-	border: 1px solid #FFD600; /*тільки для розробки*/
-}
-
-/*Для розробника сайдбару*/
-.ah-sidebar h2 {
-	color: #FFD600;
-}
-
-.ah-library-info {
-	display: flex;
-	flex: 80%;
-	max-width: 100%;
-	flex-direction: column;
-	padding-left: 2.19rem;
-	padding-bottom: 5.25rem;
-	border: 1px solid #FFD600; /*тільки для розробки*/
-}
-
-.ah-library-info_title,
-.ah-library-info_setup,
-.ah-library-info_use {
-	max-width: 76%;
-}
-
-.ah-library-info_title {
-	margin-top: 5.25rem;
-}
-
-.ah-library-info h2 {
-	margin: 1.87rem 0;
 }
 
 @media (max-width: 576px) {
@@ -98,23 +92,16 @@ h2 {
 		font-size: 12px;
 	}
 
-	.ah-row {
+	.ah-main {
 		display: flex;
 		flex-flow: column nowrap;
-		justify-content: center;
+		max-width: 100%;
+		padding: 0.8rem;
+		margin: 0;
 	}
 
-	.ah-library-info {
-		display: flex;
-		flex-direction: column;
-		padding: 0 1.1rem 5.25rem;
-		max-width: 100%;
-	}
-
-	.ah-library-info_title,
-	.ah-library-info_setup,
-	.ah-library-info_use {
-		max-width: 100%;
+	.ah-content_btn {
+		margin: 2rem 0 2rem 0;
 	}
 
 }
