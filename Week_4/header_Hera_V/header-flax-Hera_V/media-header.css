@@ -1,0 +1,92 @@
+@media only screen and (max-width: 1300px){
+    a:link, a:visited {
+        font-size: 1.5rem;
+        padding: 0.25rem 1.25rem;
+    }
+    .ah-headerlogo_v1 img{
+        padding: 0.2rem 0.3rem;
+        width: 20rem;
+        height: 6rem;
+}
+@media only screen and (max-width: 1033px){
+    header{
+        height: 6rem;
+    }
+    a:link, a:visited {
+        font-size: 1.2rem;
+        padding: 0.2rem 1rem;
+    }
+    .ah-headerlogo_v1 img{
+        padding: 0.4rem 0.3rem;
+        width: 15rem;
+        height: 4rem;
+    }
+}
+@media (max-width: 847px){
+    
+    header{
+        height: 7rem;
+        flex-direction: column;
+    }
+    a:link, a:visited {
+        font-size: 1.2rem;
+        padding: 0.2rem 1rem;
+    }
+    .ah-headerlogo_v1 img{
+        padding: 0.2rem 0.3rem;
+        width: 15rem;
+        height: 4rem;
+    }
+}
+@media (max-width: 594px){
+    
+    header{
+        height: 8.2rem;
+        flex-direction: column;
+    }
+    a:link, a:visited {
+        font-size: 0.7rem;
+        padding: 0.1rem 0.5rem;
+        margin-bottom: 1rem
+    }
+    .ah-headerlogo_v1 img{
+        padding: 0.2rem 0.3rem;
+        width: 10rem;
+        height: 3rem;
+    }
+}
+@media (max-width: 215px){
+    
+    header{
+        height: 10rem;
+        flex-direction: column;
+    }
+    a:link, a:visited {
+        font-size: 0.7rem;
+        padding: 0.1rem 0.5rem;
+        margin-bottom: 1rem
+    }
+    .ah-headerlogo_v1 img{
+        padding: 0.2rem 0.3rem;
+        width: 10rem;
+        height: 3rem;
+    }
+}
+@media (max-width: 204px){
+    
+    header{
+        height: 10.3rem;
+        flex-direction: column;
+    }
+    a:link, a:visited {
+        font-size: 0.7rem;
+        padding: 0.1rem 0.5rem;
+        margin-bottom: 1rem
+    }
+    .ah-headerlogo_v1 img{
+        padding: 0.2rem 0.3rem;
+        width: 5rem;
+        height: 1.3rem;
+    }
+}
+
