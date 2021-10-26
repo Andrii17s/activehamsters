@@ -165,6 +165,7 @@ a:link, a:visited {
         width: 20rem;
         height: 6rem;
 }
+}
 @media only screen and (max-width: 1033px){
     header{
         height: 6rem;
@@ -248,3 +249,25 @@ a:link, a:visited {
 }
 
   
+	/*footer*/
+
+.ah-wrapper-ftr {
+    display: flex;
+    flex-direction:  column;
+}
+.ah-main-ftr {
+    flex: 1 1 auto;
+}
+.ah-footer {
+    display:  flex;
+    background-color: #393535;
+    color: #ffffff;
+    padding: 1em;
+    align-items: flex-end;
+}
+.ah-container-ftr_1{
+    flex:  2;
+}
+.ah-container-ftr_2{
+    flex: 3;
+}	
