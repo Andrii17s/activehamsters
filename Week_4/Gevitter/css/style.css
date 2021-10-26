@@ -9,13 +9,27 @@ body {
   padding: 0;
 }
 
-.ah-main-cont-ord {
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.ah-container {
   background-color: #2b2727;
   max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.ah-order-info {
+  display: flex;
+  flex: 80%;
+  max-width: 100%;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
 .ah-ord-bl {
   background-color: #2b2727;
   display: flex;
@@ -24,6 +38,9 @@ body {
 }
 
 .ah-ord-bl-form1 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
 }
 
 .ah-ord-bl-form2 {
@@ -34,12 +51,14 @@ body {
   align-items: center;
 }
 
-.ah-p-v1 {
+.ah-p_v1 {
   color: #fff;
   font-weight: 300;
   font-size: 0.8rem;
   line-height: 1.5rem;
   margin: 1rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 .ah-ord-form-pos {
@@ -49,18 +68,25 @@ body {
 
 /*-------Headings-------*/
 
-.ah-h1-v1 {
+.ah-h2_v1 {
   color: #ffd600;
   font-family: Rubik;
   font-weight: 600;
   font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
-.ah-h3-v1 {
+.ah-h3_v1 {
   color: #ffd600;
   font-family: Rubik;
   font-weight: 500;
   font-size: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 1rem;
 }
 
 /*-----------------------*/
@@ -68,28 +94,31 @@ body {
 .ah-ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .ah-lst-tp-n {
   list-style-type: none;
 }
 
-.ah-ul1-v1 {
+.ah-ul1_v1 {
+  position: relative;
   color: #fff;
   font-weight: 300;
   font-size: 1rem;
   text-align: right;
   line-height: 1.8rem;
   padding-right: 1.8rem;
-  border-right: 5px solid #ffd600;
+  border-right: 3px solid #ffd600;
 }
 
-.ah-ul2-v1 {
+.ah-ul2_v1 {
   color: #fff;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.8rem;
   padding-left: 1.8rem;
+  border-left: 3px solid #ffd600;
 }
 
 /*---------Forms----------*/
@@ -114,37 +143,76 @@ body {
   align-items: center;
   border-radius: 15px;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 /*-----------------------*/
 
 /*--------Inputs---------*/
 
+/*Зміна стилів radio-input*/
+
 .ah-input-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
+
+.ah-input-radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.ah-input-radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #ffd600;
+  background-color: #2a2727;
+  border-radius: 0.5em;
+  margin-right: 0.5em;
+}
+.ah-input-radio:checked + label::before {
+  background-color: #ffd600;
+}
+
+/*--------------------*/
 
 .ah-input-text {
   color: #ffd600;
-  padding: 10px;
+  padding: 1rem;
   font-size: 1rem;
   background-color: #2a2727;
   border-radius: 9px;
   border: none;
+  margin: 0.5rem;
 }
 
-.ah-input-text placeholder {
+/*Зміна кольору тексту placeholder*/
+input[type="text"]::-webkit-input-placeholder {
   color: #ffd600;
 }
+/*-----------*/
 
-.ah-input-sub {
+.ah-btn-submit {
   color: #ffd600;
   font-weight: 700;
-  padding: 10px;
+  padding: 1rem;
   font-size: 1rem;
   background-color: #393535;
   text-align: center;
   border-radius: 9px;
   border: 1px solid #ffd600;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  margin: 1rem;
+}
+
+input.ah-btn-submit[type="submit"]:hover {
+  background-color: #ffd600;
+  color: black;
 }
 
 .ah-input-flex {
@@ -152,20 +220,39 @@ body {
   padding-bottom: 1rem;
   color: #ffd600;
   font-size: 0.9rem;
+  flex-wrap: wrap;
 }
 
 .ah-bttn-pos {
   display: flex;
 }
 
-.ah-bttn {
+/*--Розмір кнопки замовлення--*/
+@media (max-width: 1920px) {
+  .ah-btn {
+    padding: 1rem 4.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .ah-btn {
+    padding: 0.5rem 3rem;
+  }
+}
+.ah-btn {
   color: #ffd600;
   font-weight: 700;
-  padding: 10px 76px;
+  /* padding: 1rem 4.5rem; */
   font-size: 1.5rem;
   background-color: #393535;
   text-align: center;
   border-radius: 9px;
   border: 1px solid #ffd600;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+button.ah-btn:hover {
+  background-color: #ffd600;
+  color: black;
 }
 /*-----------------------*/
