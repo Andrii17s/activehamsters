@@ -93,6 +93,64 @@ h2 {
 	margin: 1.87rem 0;
 }
 
+/*Typography*/
+.ah-column {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+}
+
+/*Typography*/
+.ah-typography_title {
+	padding: 1.2rem;
+}
+
+/*Typography*/
+.ah-typography_title h1 {
+	margin-bottom: 1.2rem;
+	text-align: center;
+}
+
+/*Typography*/
+.ah-typography-types {
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	flex-flow: row nowrap;
+	padding: 1.2rem;
+}
+
+/*Typography*/
+.ah-typography_titles {
+	display: flex;
+	flex: 28%;
+	max-width: 100%;
+	flex-flow: column nowrap;
+}
+
+/*Typography*/
+.ah-typography_titles h2,
+.ah-typography_text h2,
+.ah-typography_emphasis h2 {
+	margin-bottom: 1.2rem;
+}
+
+/*Typography*/
+.ah-typography_text,
+.ah-typography_emphasis {
+	display: flex;
+	flex: 36%;
+	max-width: 100%;
+	flex-flow: column nowrap;
+}
+
+/*Typography*/
+.ah-typography_text p,
+.ah-typography_emphasis p {
+	text-align: justify;
+	margin: 0.8rem 0;
+}
+
 @media (max-width: 576px) {
 
 	html {
@@ -116,6 +174,22 @@ h2 {
 	.ah-library-info_setup,
 	.ah-library-info_use {
 		max-width: 100%;
+	}
+
+	.ah-typography-types {
+		display: flex;
+		max-width: 100%;
+		flex-flow: column nowrap;
+		padding: 1.2rem;
+	}
+
+	.ah-typography_titles,
+	.ah-typography_text,
+	.ah-typography_emphasis {
+		display: flex;
+		max-width: 100%;
+		flex-flow: column nowrap;
+		margin-bottom: 1.2rem;
 	}
 
 }
