@@ -55,7 +55,7 @@ h2 {
 
 /*-------Headings-------*/
 
-.ah-h2_v1 {
+.ah-h2_v2 {
   color: #ffffff;
   font-family: Rubik;
   font-weight: 600;
@@ -63,11 +63,11 @@ h2 {
   padding: 1rem;
   text-align: center;
   margin-top: 1rem;
-  text-shadow: 0.1rem rgb(149, 92, 255);
+  text-shadow: 0.2rem 0.2rem rgb(149, 92, 255);
 }
 
-.ah-h3_v1 {
-  color: #ffffff;
+.ah-h3_v2 {
+  color: rgb(149, 92, 255);
   font-family: Rubik;
   font-weight: 500;
   font-size: 2.5rem;
@@ -92,7 +92,7 @@ h2 {
   list-style-type: none;
 }
 
-.ah-ul1_v1 {
+.ah-ul1_v2 {
   position: relative;
   background: -webkit-linear-gradient(
       217deg,
@@ -130,7 +130,7 @@ h2 {
   flex-direction: column;
 }
 
-.ah-ord-form1 {
+.ah-ord-form1_v2 {
   background: linear-gradient(
       217deg,
       rgba(255, 108, 206, 0.8),
@@ -146,7 +146,7 @@ h2 {
   border-radius: 10px;
 }
 
-.ah-ord-form-pos {
+.ah-ord-form-pos_v2 {
   padding: 1rem;
   line-height: 1.7rem;
 }
@@ -193,17 +193,17 @@ h2 {
 
 /*--Розмір кнопки замовлення--*/
 @media (max-width: 1920px) {
-  .ah-btn {
+  .ah-btn_v2 {
     padding: 0.5rem 3rem;
   }
 }
 
 @media (max-width: 600px) {
-  .ah-btn {
+  .ah-btn_v2 {
     padding: 0.5rem 0.5rem;
   }
 }
-.ah-btn {
+.ah-btn_v2 {
   color: #fff;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #fff;
@@ -215,7 +215,7 @@ h2 {
   border-radius: 1rem;
 }
 
-button.ah-btn:hover {
+button.ah-btn_v2:hover {
   background-color: rgba(43, 1, 112, 0.3);
   color: rgb(33, 0, 87);
   border: 1px solid rgb(43, 1, 112, 0.3);
@@ -233,7 +233,7 @@ button.ah-btn:hover {
   align-items: center;
 }
 
-.ah-ord-form2 {
+.ah-ord-form2_v2 {
   width: 100%;
   background-color: #fff;
   display: flex;
@@ -272,7 +272,7 @@ input[type="email"]::-webkit-input-placeholder {
   color: #001d38;
 }
 
-.ah-btn-submit {
+.ah-btn-submit_v2 {
   color: #001d38;
   font-weight: 700;
   padding: 1rem;
@@ -285,7 +285,7 @@ input[type="email"]::-webkit-input-placeholder {
   margin: 1rem;
 }
 
-input.ah-btn-submit[type="submit"]:hover {
+input.ah-btn-submit_v2[type="submit"]:hover {
   background-color: rgb(255, 108, 206);
   color: #001d38;
 }
