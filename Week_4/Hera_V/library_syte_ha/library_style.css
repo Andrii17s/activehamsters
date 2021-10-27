@@ -1,0 +1,76 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+/* ПОЧАТОК СТИЛЮ ХЕДЕРУ */
+header{
+    position: sticky;
+    top: 0;
+    background-color: #393535;
+    height: 8.125rem;
+    display: flex;
+    align-items: center;
+}
+.ah-headerlogo_v1{
+    flex: 30%;
+}
+.ah-headerlogo_v1 img{
+    width: 25rem;
+    height: 7.4rem;
+}
+.ah-botthon-link_v1{
+    flex: 70%; 
+    text-align: center;
+    
+}
+.ah-botthon-link_v1 a{
+    margin: 0rem 1rem;
+}
+#aH-botthon-link_v1:link, #aH-botthon-link_v1:visited {
+    border: 1px solid #FFD600;
+    background-color: #393535;
+    color: white;
+    font-size: 1.8rem;
+    padding: 0.3rem 2.2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.56rem;
+  }
+  #aH-botthon-link_v1:hover, #aH-botthon-link_v1:active {
+    background-color: #FFD600;
+    color: black;
+  }
+  /* ЗАКІНЧЕННЯ СТИЛЮ ХЕДЕРУ */
+  /*ПОЧАТОК БОКОВОЇ НАВІГАЦІЇ САЙТУ*/
+  .ah-section_v1{
+     
+    float: left;
+    width: 18.125rem;
+    height: 40rem;
+    background:#2A2727;
+    ;
+    padding: 20px;
+  }
+  /*КІНЕЦЬ БОКОВОЇ НАВІГАЦІЇ САЙТУ*/
+  /*ПОЧАТОК СТИЛЮ ФУТЕРУ*/
+.ah-footer_v1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 8.5rem;
+    background-color: #393535;
+    left: 0; bottom: 0;
+}  
+.ah-footer_v1 .ah-contacts_v1{
+    margin-left: 40%;
+    padding: 0.3rem;
+}
+.ah-footer_v1, #aH-contacts-link_v1{
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+  /*ЗАКІНЧЕННЯ СТИЛЮ ФУТЕРУ*/
+  

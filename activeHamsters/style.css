@@ -8,10 +8,21 @@
 /*Базовий шрифт*/
 html {
 	font-size: 16px;
+    display: flex;
+
 }
 
 body {
+    display: flex;
+    flex-direction: column;
 	box-sizing: border-box;
+    justify-content: stretch;
+}
+
+.ah-header,
+.ah-wrapper-ftr,
+.ah-main {
+    width: 100%;
 }
 
 /*Базовий елемент бібліотеки, не підлягає зміні*/
@@ -53,23 +64,18 @@ h1 {
 
 .ah-container {
 	max-width: 100%;
-	min-height: auto;
+    height: fit-content;
 	background-color: #2B2727;
 }
 
-.ah-row {
-	display: flex;
-	flex-flow: row nowrap;
-}
 
 .ah-main {
 	display: flex;
 	flex-flow: column nowrap;
 	max-width: 41%;
-	min-height: auto;
 	margin-top: 8rem;
 	margin-left: 11rem;
-	margin-bottom: 15.25rem;
+	margin-bottom: 6.7rem;
 }
 
 hr {
@@ -165,6 +171,7 @@ a:link, a:visited {
         width: 20rem;
         height: 6rem;
 }
+}
 @media only screen and (max-width: 1033px){
     header{
         height: 6rem;
@@ -248,3 +255,26 @@ a:link, a:visited {
 }
 
   
+	/*footer*/
+
+.ah-wrapper-ftr {
+    display: flex;
+    flex-direction:  column;
+    bottom: 0;
+}
+.ah-main-ftr {
+    flex: 1 1 auto;
+}
+.ah-footer {
+    display:  flex;
+    background-color: #393535;
+    color: #ffffff;
+    padding: 1em;
+    align-items: flex-end;
+}
+.ah-container-ftr_1{
+    flex:  2;
+}
+.ah-container-ftr_2{
+    flex: 3;
+}	
