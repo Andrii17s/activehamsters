@@ -35,6 +35,15 @@ h1 {
 	color: #FFD600;
 }
 
+h2 {
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-size: 2.18rem;
+	font-weight: 300;
+	line-height: 2.67rem;
+	color: #FFD600;
+}
+
 /*Базовий елемент бібліотеки, не підлягає зміні*/
 .ah-btn {
 	background: #2A2727;
@@ -68,6 +77,58 @@ h1 {
 	background-color: #2B2727;
 }
 
+.ah-row {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+/*Для розробника сайдбару*/
+.ah-sidebar {
+	display: flex;
+	max-width: 100%;
+    height: auto;
+	flex-direction: row;
+	flex: 20%;
+}
+
+/*Для розробника сайдбару*/
+.ah-sidebar h2 {
+	color: #FFD600;
+}
+
+.ah-sidebar-library {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.ah-link-sidebar-nav{
+    color: white;
+	margin-top: 10px;
+	padding: 11px 20px 9px 45px;
+	text-align: left;
+	align-items: center;
+    text-decoration: none;
+    min-width: 100%;
+    background: #393535;
+    box-sizing: border-box;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 0 9px 9px 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 30px;
+    text-transform: lowercase;
+	white-space:nowrap;
+}
+
+.ah-sidebar-library a:hover{
+    background-color: #FFD600;
+    color: black;
+}
 
 .ah-main {
 	display: flex;
@@ -94,6 +155,29 @@ hr {
 	max-width: 100%;
 }
 
+.ah-library-info {
+	display: flex;
+	flex: 80%;
+	max-width: 100%;
+	flex-direction: column;
+	padding-left: 2.19rem;
+	padding-bottom: 5.25rem;
+}
+
+.ah-library-info_title,
+.ah-library-info_setup,
+.ah-library-info_use {
+	max-width: 76%;
+}
+
+.ah-library-info_title {
+	margin-top: 5.25rem;
+}
+
+.ah-library-info h2 {
+	margin: 1.87rem 0;
+}
+
 @media (max-width: 576px) {
 
 	html {
@@ -114,8 +198,6 @@ hr {
 
 }
 
-
-
 /*header*/
 
 
@@ -127,6 +209,19 @@ header{
     display: flex;
     align-items: center;
 }
+
+header a:link, a:visited {
+    border: 1px solid #FFD600;
+    background-color: #393535;
+    color: white;
+    font-size: 1.8rem;
+    padding: 0.3rem 2.2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.56rem;
+}
+
 .ah-headerlogo_v1{
     flex: 30%;
 }
@@ -142,19 +237,6 @@ header{
 .ah-botthon-link_v1 a{
     margin: 0rem 1rem;
 }
-a:link, a:visited {
-    border: 1px solid #FFD600;
-    background-color: #393535;
-    color: white;
-    font-size: 1.8rem;
-    padding: 0.3rem 2.2rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 0.56rem;
-
-
-  }
   
   a:hover, a:active {
     background-color: #FFD600;
@@ -280,13 +362,6 @@ a:link, a:visited {
 }
 
 /*pts*/
-
-.ah-row {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center;
-}
 
 .at-squad-img {
   display: flex;
