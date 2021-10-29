@@ -10,10 +10,14 @@ html {
 	font-size: 16px;
     display: flex;
     width: 100%;
+    height: 100%;
+    font-family: "Rubik", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 	box-sizing: border-box;
@@ -47,6 +51,26 @@ h2 {
 	color: #FFD600;
 }
 
+.container-2 p {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+/*----------*/
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2, h1 {
+  font-family: "Rubik", sans-serif;
+}
+
+
+
+
 /*Базовий елемент бібліотеки, не підлягає зміні*/
 .ah-btn {
 	background: #2A2727;
@@ -75,8 +99,8 @@ h2 {
 }
 /*Використовується на всіх сторінках*/
 .ah-container {
+    height: 100%;
 	max-width: 100%;
-    height: fit-content;
 	background-color: #2B2727;
     align-items: center;
     display: flex;
@@ -151,15 +175,91 @@ h2 {
     color: black;
 }
 
+/*Typography*/
+.ah-column {
+	display: flex;
+    width: 76%;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+}
+
+/*Typography*/
+.ah-typography_title {
+	padding: 1.2rem;
+}
+
+/*Typography*/
+.ah-typography_title h1 {
+	margin-bottom: 1.2rem;
+	text-align: center;
+}
+
+/*Typography*/
+.ah-typography-types {
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	flex-flow: row nowrap;
+	padding: 1.2rem;
+}
+
+/*Typography*/
+.ah-typography_titles {
+	display: flex;
+	flex: 28%;
+	max-width: 100%;
+	flex-flow: column nowrap;
+}
+
+/*Typography*/
+.ah-typography_titles h2,
+.ah-typography_text h2,
+.ah-typography_emphasis h2 {
+	margin-bottom: 1.2rem;
+}
+
+/*Typography*/
+.ah-typography_text,
+.ah-typography_emphasis {
+	display: flex;
+	flex: 36%;
+	max-width: 100%;
+	flex-flow: column nowrap;
+}
+
+/*Typography*/
+.ah-typography_text p,
+.ah-typography_emphasis p {
+	text-align: justify;
+	margin: 0.8rem 0;
+}
+
 /*==========================СТИЛІ ГОЛОВНОЇ СТОРІНКИ===========================*/
 
 .ah-main {
 	display: flex;
+    height: 100%;
 	flex-flow: column nowrap;
 	max-width: 41%;
 	margin-top: 8rem;
 	margin-left: 11rem;
 	margin-bottom: 8rem;
+}
+
+.ah-main-autosize {
+	display: flex;
+    height: fit-content;
+	flex-flow: column nowrap;
+	max-width: 41%;
+	margin-top: 8rem;
+	margin-left: 11rem;
+	margin-bottom: 8rem;
+}
+
+.ah-main-width {
+	display: flex;
+	flex-flow: column nowrap;
+	max-width: 100%;
 }
 
 hr {
@@ -180,11 +280,10 @@ hr {
 
 .ah-library-info {
 	display: flex;
-	flex: 80%;
 	max-width: 100%;
 	flex-direction: column;
+    height: 100%;
 	padding-left: 2.19rem;
-	padding-bottom: 5.25rem;
 }
 
 .ah-library-info_title,
@@ -442,7 +541,7 @@ h2 {
 
 .ah-order-info {
   display: flex;
-  flex: 80%;
+  flex: 76%;
   max-width: 100%;
   flex-direction: column;
   padding-bottom: 3rem;
@@ -673,4 +772,154 @@ button.ah-btn:hover {
   background-color: #ffd600;
   color: black;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+/*FONTS*/
+.ah-montserrat-family {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 1.2rem; !important;
+}
+
+.ah-rubik-family {
+	font-family: 'Rubik', sans-serif;
+	color: white;
+	font-size: 1.2rem; !important;
+}
+
+/*TITLES*/
+.ah-h1,
+.ah-h2,
+.ah-h3,
+.ah-h4,
+.ah-h5,
+.ah-h6 {
+	margin-bottom: 0.5rem;
+	margin-top: 0;
+	font-weight: 500;
+	line-height: 1.2;
+	color: white;
+}
+
+.ah-h1 {
+	font-size: calc(1.425rem + 2.1vw);
+}
+
+@media (min-width: 1200px) {
+	.ah-h1 {
+		font-size: 3rem;
+	}
+}
+
+.ah-h2 {
+	font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+	.ah-h2 {
+		font-size: 2.5rem;
+	}
+}
+
+.ah-h3 {
+	font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+	.ah-h3 {
+		font-size: 2rem;
+	}
+}
+
+.ah-h4 {
+	font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+	.ah-h4 {
+		font-size: 1.5rem;
+	}
+}
+
+.ah-h5 {
+	font-size: 1.25rem;
+}
+
+.ah-h6 {
+	font-size: 1rem;
+}
+
+/*TEXT STYLES*/
+.ah-text-italic {
+	font-style: italic; !important;
+}
+
+.ah-text-underline {
+	text-decoration: underline !important;
+}
+
+.ah-text-line-through {
+	text-decoration: line-through !important;
+}
+
+.ah-text-lowercase {
+	text-transform: lowercase !important;
+}
+
+.ah-text-uppercase {
+	text-transform: uppercase !important;
+}
+
+.ah-text-capitalize {
+	text-transform: capitalize !important;
+}
+
+.ah-text-primary {
+	opacity: 1;
+	color: #375a7f !important;
+}
+
+.ah-text-secondary {
+	opacity: 1;
+	color:  #444 !important;
+}
+
+.ah-text-success {
+	opacity: 1;
+	color: #00bc8c !important;
+}
+
+.ah-text-info {
+	opacity: 1;
+	color: #3498db !important;
+}
+
+.ah-text-warning {
+	opacity: 1;
+	color: #f39c12 !important;
+}
+
+.ah-text-danger {
+	opacity: 1;
+	color: #e74c3c !important;
+}
+
+.ah-text-light {
+	opacity: 1;
+	color: #adb5bd !important;
+}
+
+.ah-text-dark {
+	opacity: 1;
+	color: #303030 !important;
+}
+
+.ah-text-muted {
+	opacity: 1;
+	color: #888 !important;
+}
+
 /*-----------------------*/

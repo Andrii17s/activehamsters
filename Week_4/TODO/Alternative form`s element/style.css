@@ -1,0 +1,293 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.ah-container {
+  background-color: #001d38;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ah-order-info {
+  display: flex;
+  flex: 80%;
+  max-width: 100%;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.ah-ord-bl {
+  background-color: #001d38;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.ah-p_v1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.ah-ord-form-pos {
+  padding: 1rem;
+  line-height: 1.7rem;
+}
+
+/*-------Headings-------*/
+
+.ah-h2_v2 {
+  color: #ffffff;
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: 0.2rem 0.2rem rgb(149, 92, 255);
+}
+
+.ah-h3_v2 {
+  color: rgb(149, 92, 255);
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  border: 5px solid #fff;
+  border-style: dotted;
+  border-color: rgb(149, 92, 255);
+}
+
+/*-----------------------*/
+
+.ah-ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ah-lst-tp-n {
+  list-style-type: none;
+}
+
+.ah-ul1_v2 {
+  position: relative;
+  background: -webkit-linear-gradient(
+      217deg,
+      rgba(255, 108, 206, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(54, 198, 255, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(149, 92, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.8rem;
+  padding-right: 1.8rem;
+}
+
+.ah-input-date label for {
+  padding: 1rem;
+  color: rgb(149, 92, 255);
+}
+
+.ah-ord-bl-form1 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.ah-input-flex {
+  display: flex;
+  padding-bottom: 1rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.ah-ord-form1_v2 {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 108, 206, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 183, 255, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(89, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.ah-ord-form-pos_v2 {
+  padding: 1rem;
+  line-height: 1.7rem;
+}
+
+/*Зміна стилів checkbox-input*/
+
+.ah-input-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.ah-input-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.ah-input-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.ah-input-checkbox:checked + label::before {
+  background-color: rgba(43, 1, 112, 0.3);
+  color: rgb(33, 0, 87);
+  border: 1px solid rgb(43, 1, 112, 0.3);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.ah-bttn-pos {
+  display: flex;
+}
+
+/*--Розмір кнопки замовлення--*/
+@media (max-width: 1920px) {
+  .ah-btn_v2 {
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .ah-btn_v2 {
+    padding: 0.5rem 0.5rem;
+  }
+}
+.ah-btn_v2 {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  backdrop-filter: blur(7px);
+  font-weight: 700;
+  /* padding: 1rem 4.5rem; */
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+button.ah-btn_v2:hover {
+  background-color: rgba(43, 1, 112, 0.3);
+  color: rgb(33, 0, 87);
+  border: 1px solid rgb(43, 1, 112, 0.3);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*--------------------*/
+
+/*-----Form_2------*/
+.ah-ord-bl-form2 {
+  padding: 15px;
+  background-color: #001d38;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ah-ord-form2_v2 {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+/*--------Inputs---------*/
+
+.ah-input-text {
+  color: #001d38;
+  padding: 1rem;
+  font-size: 1rem;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 108, 206, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 183, 255, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(89, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  border-radius: 9px;
+  border: none;
+  margin: 0.5rem;
+}
+
+/*Зміна кольору тексту placeholder*/
+input[type="text"]::-webkit-input-placeholder {
+  color: #001d38;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+  color: #001d38;
+}
+
+.ah-btn-submit_v2 {
+  color: #001d38;
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: rgb(149, 92, 255);
+  text-align: center;
+  border-radius: 9px;
+  border: none;
+  box-shadow: inset 0px 4px 7px rgba(0, 0, 0, 0.25);
+  margin: 1rem;
+}
+
+input.ah-btn-submit_v2[type="submit"]:hover {
+  background-color: rgb(255, 108, 206);
+  color: #001d38;
+}
+
+/*-----------------------*/
