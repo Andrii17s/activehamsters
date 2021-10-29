@@ -1,49 +1,43 @@
 .header{
-    position: sticky;
-    top: 0;
-    background-color: #393535;
-    align-items: center;
-    display: flex;
-    max-width: 100%;
-    height: fit-content;
-  /*min-height: auto;*/ /*аналог верхньої строки*/
-   /*заміни на потрібний*/
-    align-items: center;
-    flex-direction: row;
+    position: sticky;/*залишає хедер на місці при скролі сторінки*/
+    top: 0;/*підтягує хедер до верхнього краю сторінки*/
+    background-color: #393535;/*колір заднього фону блоку*/
+    align-items: center;/*розміщення обєктів/тексту по центру блоку*/
+    display: flex;/*функція флексу*/
+    max-width: 100%;/*максимальна ширина блоку/хедеру*/
+    height: min-content;/*min-height: auto;*/ /*аналог верхньої строки*/
+    flex-direction: row;/*розміщення елеметів флекс блоку в колонки*/
 }
 
 .ah-headerlogo_v1{
-    border: 1px solid rgb(2, 132, 253);
-    flex: 30%;
+    flex: 30%;/* блок займає 30% від усієї ширини*/
 }
-.ah-headerlogo_v1 img{
+.ah-headerlogo_v1 img{ /*розміри картинки логотипу*/
     width: 25rem;
     height: 7.4rem;
 }
 .ah-botthon-link_v1{
-    border: 1px solid rgb(2, 253, 23);
-    flex: 70%;
-    padding: 0rem 0rem; 
-    text-align: center;
-    
+    flex: 70%;/* блок займає 70% від усієї ширини*/
+    padding: 0rem 0rem;/*відступи*/
+    text-align: center; /*розміщення оюєктів "кнопок" по центру в даномцу блоці*/
 }
 .ah-botthon-link_v1 a{
-    margin: 1rem 1rem;
+    margin: 1rem 1rem;/*відступи посилань у хедері*/
 }
 a:link, a:visited {
-    border: 1px solid #FFD600;
-    background-color: #393535;
-    color: white;
-    font-size: 1.8rem;
-    padding: 0.3rem 2.2rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 0.56rem;
+    border: 1px solid #FFD600; /* колір контуру "кнопки"*/
+    background-color: #393535;  /* колір заливки "кнопки"*/
+    color: white; /* колір тексту "кнопки"*/
+    font-size: 1.8rem; /* розмір тексту "кнопки"*/
+    padding: 0.3rem 2.2rem; /*відступи від тексту до контору "кнопки"*/
+    text-align: center; /*розмішення текту по центрі кнопки*/
+    text-decoration: none; /*функція яка приберає нижнє підкреслення на посилані*/
+    display: inline-block; 
+    border-radius: 0.56rem; /*заокруглення на контурі "кнопки"*/
   }
   
-  a:hover, a:active {
-    background-color: #FFD600;
-    color: black;
+  a:hover, a:active { /*дії при наведені курсору мишки*/
+    background-color: #FFD600; /*зміна кольору заливки при наведені курсору мишки*/
+    color: black;/*зміна кольору тексту при наведені мишки*/
   }
   
