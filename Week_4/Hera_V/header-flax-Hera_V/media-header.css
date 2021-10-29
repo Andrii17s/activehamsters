@@ -1,11 +1,13 @@
+
 @media only screen and (max-width: 738px){
     .header{
         flex-direction: column;
     }
 }
+
 @media only screen and (max-width: 423px){
     .ah-headerlogo_v1 img{
         width: 15rem;
         height: 4rem;       
     }
-}    
+} 
