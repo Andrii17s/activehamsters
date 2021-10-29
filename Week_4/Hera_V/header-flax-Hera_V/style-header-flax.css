@@ -16,15 +16,18 @@
     width: 25rem;
     height: 7.4rem;
 }
+#logoLink:hover, #logoLink:active { /*дії при наведені курсору мишки*/
+    background-color: #ffffff; /*зміна кольору заливки при наведені курсору мишки*/
+  }
 .ah-botthon-link_v1{
     flex: 70%;/* блок займає 70% від усієї ширини*/
     padding: 0rem 0rem;/*відступи*/
     text-align: center; /*розміщення оюєктів "кнопок" по центру в даномцу блоці*/
 }
-.ah-botthon-link_v1 a{
+.ah-botthon-link_v1 #bottonLink{
     margin: 1rem 1rem;/*відступи посилань у хедері*/
 }
-a:link, a:visited {
+#bottonLink:link, #bottonLink:visited {
     border: 1px solid #FFD600; /* колір контуру "кнопки"*/
     background-color: #393535;  /* колір заливки "кнопки"*/
     color: white; /* колір тексту "кнопки"*/
@@ -36,7 +39,7 @@ a:link, a:visited {
     border-radius: 0.56rem; /*заокруглення на контурі "кнопки"*/
   }
   
-  a:hover, a:active { /*дії при наведені курсору мишки*/
+  #bottonLink:hover, #bottonLink:active { /*дії при наведені курсору мишки*/
     background-color: #FFD600; /*зміна кольору заливки при наведені курсору мишки*/
     color: black;/*зміна кольору тексту при наведені мишки*/
   }
