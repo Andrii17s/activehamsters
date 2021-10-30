@@ -324,15 +324,17 @@ hr {
 
 
 header{
-    position: sticky;
-    top: 0;
-    background-color: #393535;
-    height: 8.125rem;
-    display: flex;
-    align-items: center;
+    position: sticky;/*залишає хедер на місці при скролі сторінки*/
+    top: 0;/*підтягує хедер до верхнього краю сторінки*/
+    background-color: #393535;/*колір заднього фону блоку*/
+    align-items: center;/*розміщення обєктів/тексту по центру блоку*/
+    display: flex;/*функція флексу*/
+    max-width: 100%;/*максимальна ширина блоку/хедеру*/
+    height: min-content;/*min-height: auto;*/ /*аналог верхньої строки*/
+    flex-direction: row;/*розміщення елеметів флекс блоку в колонки*/
 }
 
-header a:link, a:visited {
+.ah-botthon-link_v1 a:link, a:visited {
     border: 1px solid #FFD600;
     background-color: #393535;
     color: white;
@@ -345,22 +347,27 @@ header a:link, a:visited {
 }
 
 .ah-headerlogo_v1{
-    flex: 30%;
+    flex: 30%;/* блок займає 30% від усієї ширини*/
 }
-.ah-headerlogo_v1 img{
+.ah-headerlogo_v1 img{ /*розміри картинки логотипу*/
     width: 25rem;
     height: 7.4rem;
 }
 .ah-botthon-link_v1{
     flex: 70%;
     text-align: center;
-
-}
-.ah-botthon-link_v1 a{
-    margin: 0rem 1rem;
 }
 
-  a:hover, a:active {
+.ah-botthon-link_v1{
+    flex: 70%;/* блок займає 70% від усієї ширини*/
+    padding: 0rem 0rem;/*відступи*/
+    text-align: center; /*розміщення оюєктів "кнопок" по центру в даномцу блоці*/
+}
+.ah-botthon-link_v1 #bottonLink {
+    margin: 1rem 1rem; /*відступи посилань у хедері*/
+}
+
+.ah-botthon-link_v1 a:hover, .ah-botthon-link_v1 a:active {
     background-color: #FFD600;
     color: black;
   }
@@ -423,6 +430,21 @@ header a:link, a:visited {
         height: 3rem;
     }
 }
+
+
+@media only screen and (max-width: 738px){
+    .header{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 423px){
+    .ah-headerlogo_v1 img{
+        width: 15rem;
+        height: 4rem;
+    }
+}
+
 @media (max-width: 215px){
 
     header{
