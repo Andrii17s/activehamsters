@@ -16,8 +16,8 @@
     width: 25rem;
     height: 7.4rem;
 }
-#logoLink:hover, #logoLink:active { /*дії при наведені курсору мишки*/
-    background-color: #ffffff; /*зміна кольору заливки при наведені курсору мишки*/
+.ah-headerlogo_v1:hover, .ah-headerlogo_v1:active { /*дії при наведені курсору мишки*/
+    background-color: #FFD600; /*зміна кольору заливки при наведені курсору мишки*/
   }
 .ah-botthon-link_v1{
     flex: 70%;/* блок займає 70% від усієї ширини*/
