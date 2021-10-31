@@ -1,0 +1,107 @@
+html {
+  font-family: "Rubik", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+/*-------Heading 1---------*/
+
+/* @media (max-width: 1680px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+} */
+
+h1 {
+  font-family: "Rubik", sans-serif;
+}
+/*----------*/
+
+/*-------Heading 2-------*/
+/* 
+@media (max-width: 1680px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+} */
+h2 {
+  font-family: "Rubik", sans-serif;
+}
+/*----------*/
+
+/*-------Heading 3---------*/
+/* 
+@media (max-width: 1680px) {
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  h3 {
+    font-size: 1.3rem;
+  } */
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+/*----------*/
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*---------Footer---------*/
+/* @media (max-width: 1680px) {
+    .container-2 p {
+      font-size: 0.5rem;
+      line-height: 0.5rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .container-2 p {
+      font-size: 0.6rem;
+      line-height: 0.9rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .container-2 p {
+      font-size: 0.8rem;
+      line-height: 0.9rem;
+    }
+  }
+} */
+.container-2 p {
+  font-family: "Montserrat", sans-serif;
+}
