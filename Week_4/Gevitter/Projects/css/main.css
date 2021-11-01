@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.ah-container {
+  max-width: 100%;
+  min-height: auto;
+  background-color: #2b2727;
+  padding: 1rem 0 5rem 0;
+}
+
+.wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*Стилі для Заголовка-2*/
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 2.81rem;
+  font-weight: 600;
+  line-height: 3.33rem;
+  color: #ffd600;
+  text-align: center;
+}
+
+/*Налаштування блоків фігури для зображення*/
+.ah-img-holder {
+  width: 30rem;
+  height: 16rem;
+  margin: 3rem 3rem;
+  display: flex;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 2px solid #ffd600;
+  box-shadow: 6px 6px 23px rgba(0, 0, 0, 0.74);
+  font-size: 0.8rem;
+}
+
+/*Налаштування розміру і форми зображення в фігурі*/
+.ah-img-holder img {
+  width: inherit;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+/*Налаштування вспливаючого вікна з текстом і кнопкою*/
+.ah-img-block {
+  width: 30rem;
+  height: 4rem;
+  margin-top: 16rem;
+  position: absolute;
+  background: #ffd600;
+  display: none;
+  text-align: center;
+  box-shadow: 6px 6px 23px rgba(0, 0, 0, 0.74);
+}
+
+/*Показує ah-img-block при наведенні*/
+.ah-img-holder:hover .ah-img-block {
+  display: block;
+}
+
+/*Центрує і вирівнює простір між текстом і кнопкою блоку ah-img-block*/
+.ah-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+/*Налаштування кнопки*/
+.ah-btn {
+  background: #2a2727;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ffd600;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8;
+  color: #ffffff;
+}
+
+/*Зміна кольорів кнопки при наведенні*/
+.ah-btn:hover {
+  background-color: #ffd600;
+  color: #2a2727;
+  border: 1px solid #2a2727;
+}

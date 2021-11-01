@@ -1,0 +1,27 @@
+html {
+  font-family: "Rubik", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  .squad-unit {
+    padding-bottom: 6.75rem;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.7rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .squad-unit {
+    padding-bottom: 6.75rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.5rem;
+    flex-wrap: wrap;
+  }
+}
