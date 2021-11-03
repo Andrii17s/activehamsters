@@ -8,6 +8,7 @@ body {
   font-size: 16px;
 }
 
+/*--Задає ширину і колір всього контейнеру--*/
 .ah-container {
   max-width: 100%;
   min-height: auto;
@@ -15,12 +16,11 @@ body {
   padding: 1rem 0 5rem 0;
 }
 
+/*Центрує блок із зображеннями і робить перенос блоків при зменшенні екрану*/
 .wraper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /*Стилі для Заголовка-2*/
@@ -36,9 +36,9 @@ h2 {
 
 /*Налаштування блоків фігури для зображення*/
 .ah-img-holder {
-  width: 30rem;
-  height: 16rem;
-  margin: 3rem 3rem;
+  max-width: 30rem;
+  min-height: auto;
+  margin: 1.5rem 1.5rem;
   display: flex;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -47,9 +47,14 @@ h2 {
   font-size: 0.8rem;
 }
 
+/*Показує ah-img-block при наведенні*/
+.ah-img-holder:hover .ah-img-block {
+  display: block;
+}
+
 /*Налаштування розміру і форми зображення в фігурі*/
 .ah-img-holder img {
-  width: inherit;
+  width: 100%;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
 }
@@ -57,18 +62,13 @@ h2 {
 /*Налаштування вспливаючого вікна з текстом і кнопкою*/
 .ah-img-block {
   width: 30rem;
-  height: 4rem;
-  margin-top: 16rem;
+  min-height: auto;
   position: absolute;
+  align-self: flex-end;
   background: #ffd600;
   display: none;
   text-align: center;
   box-shadow: 6px 6px 23px rgba(0, 0, 0, 0.74);
-}
-
-/*Показує ah-img-block при наведенні*/
-.ah-img-holder:hover .ah-img-block {
-  display: block;
 }
 
 /*Центрує і вирівнює простір між текстом і кнопкою блоку ah-img-block*/
@@ -79,8 +79,8 @@ h2 {
   margin: 1rem;
 }
 
-/*Налаштування кнопки*/
-.ah-btn {
+/*Налаштування кнопки виключно для цієї сторінки*/
+.ah-btn_ignore {
   background: #2a2727;
   padding: 0.5rem 1rem;
   border: 1px solid #ffd600;
@@ -91,10 +91,11 @@ h2 {
   font-weight: 300;
   font-size: 0.8;
   color: #ffffff;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
 /*Зміна кольорів кнопки при наведенні*/
-.ah-btn:hover {
+.ah-btn_ignore:hover {
   background-color: #ffd600;
   color: #2a2727;
   border: 1px solid #2a2727;
