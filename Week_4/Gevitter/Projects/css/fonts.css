@@ -4,24 +4,22 @@ html {
   font-size: 16px;
 }
 
-@media (max-width: 992px) {
-  .squad-unit {
-    padding-bottom: 6.75rem;
-    font-size: 1.8rem;
+/* @media (max-width: 992px) {
+  .ah-img-holder {
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 300;
-    line-height: 2.7rem;
+    line-height: 0.8rem;
     flex-wrap: wrap;
   }
-}
+} */
 
 @media (max-width: 600px) {
-  .squad-unit {
-    padding-bottom: 6.75rem;
-    font-size: 1.5rem;
+  .ah-img-holder {
+    font-size: 0.7rem;
     font-style: normal;
     font-weight: 300;
-    line-height: 2.5rem;
+    line-height: 0.7rem;
     flex-wrap: wrap;
   }
 }
