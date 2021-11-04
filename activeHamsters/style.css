@@ -76,9 +76,9 @@ h2 {
 	height: 100%;
 	max-width: 100%;
 	background-color: #2B2727;
-	align-items: center;
+	/*align-items: center;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;*/
 }
 
 /*Використовується на всіх сторінках*/
@@ -212,133 +212,11 @@ header {
 	color: black;
 }
 
-/*@media only screen and (max-width: 1300px) {
-	a:link, a:visited {
-		font-size: 1.5rem;
-		padding: 0.25rem 1.25rem;
-	}
-
-	!*.ah-header_logo_v1 img {
-		padding: 0.2rem 0.3rem;
-		width: 20rem;
-		height: 6rem;
-	}*!
-}
-
-@media only screen and (max-width: 1033px) {
-	header {
-		height: 6rem;
-	}
-
-	a:link, a:visited {
-		font-size: 1.2rem;
-		padding: 0.2rem 1rem;
-	}
-
-	!*.ah-header_logo_v1 img {
-		padding: 0.4rem 0.3rem;
-		width: 15rem;
-		height: 4rem;
-	}*!
-}
-
-@media (max-width: 847px) {
-
-	header {
-		height: 7rem;
-		flex-direction: column;
-	}
-
-	a:link, a:visited {
-		font-size: 1.2rem;
-		padding: 0.2rem 1rem;
-	}
-
-	!*.ah-header_logo_v1 img {
-		padding: 0.2rem 0.3rem;
-		width: 15rem;
-		height: 4rem;
-	}*!
-}
-
-@media (max-width: 594px) {
-
-	.ah-header-container {
-		flex-direction: column;
-	}
-
-	a:link, a:visited {
-		font-size: 0.7rem;
-		padding: 0.1rem 0.5rem;
-		margin-bottom: 1rem
-	}
-
-	!*.ah-header_logo_v1 img {
-		padding: 0.2rem 0.3rem;
-		width: 10rem;
-		height: 3rem;
-	}*!
-}
-
-
-@media only screen and (max-width: 738px) {
-	.header {
-		flex-direction: column;
-	}
-}
-
-@media only screen and (max-width: 423px) {
-	.ah-header_logo_v1 img {
-		width: 15rem;
-		height: 4rem;
-	}
-}
-
-@media (max-width: 215px) {
-
-	header {
-		height: 10rem;
-		flex-direction: column;
-	}
-
-	a:link, a:visited {
-		font-size: 0.7rem;
-		padding: 0.1rem 0.5rem;
-		margin-bottom: 1rem
-	}
-
-	!*.ah-header_logo_v1 img {
-		padding: 0.2rem 0.3rem;
-		width: 10rem;
-		height: 3rem;
-	}*!
-}
-
-@media (max-width: 204px) {
-
-	header {
-		height: 10.3rem;
-		flex-direction: column;
-	}
-
-	a:link, a:visited {
-		font-size: 0.7rem;
-		padding: 0.1rem 0.5rem;
-		margin-bottom: 1rem
-	}
-
-	!*.ah-header_logo_v1 img {
-		padding: 0.2rem 0.3rem;
-		width: 5rem;
-		height: 1.3rem;
-	}*!
-}*/
-
 /*==========================СТИЛІ ГОЛОВНОЇ СТОРІНКИ===========================*/
 
 .ah-row-column {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-around;
 }
 
@@ -422,7 +300,6 @@ and (max-device-width: 1366px) {
 	margin-top: 1.25rem;
 	display: flex;
 	flex-flow: column nowrap;
-	/*border: 1px solid yellow;*/
 }
 
 .ah-sidebar-nav_link {
@@ -528,6 +405,18 @@ and (max-device-width: 1366px) {
 .ah-typography_emphasis p {
 	text-align: justify;
 	margin: 0.8rem 0;
+}
+
+@media (max-width: 300px) {
+
+	.ah-sidebar-nav_link {
+		text-align: center;
+	}
+
+	.ah-sidebar-nav_link:nth-child(1),
+	.ah-sidebar-nav_link:nth-child(2) {
+		min-width: 100%;
+	}
 }
 
 @media (max-width: 576px) {
@@ -868,49 +757,104 @@ button.ah-btn:hover {
 
 /*================================СТИЛІ СТРІНКИ УЧАСНИКІВ===============================*/
 
-.at-squad-img {
+.ah-squad {
 	display: flex;
-	width: 65%;
-	padding: 7.2rem 0 4.5rem 0;
-}
-
-.at-squad-unit {
-	display: flex;
+	flex-flow: column nowrap;
 	justify-content: center;
-	padding-bottom: 6.75rem;
-	font-size: 2rem;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 2.3rem;
+	max-width: 68%;
+	flex: 68%;
+	min-height: auto;
+	margin: 7.2rem auto 6.75rem;
 }
 
-.at-squad-unit-lt {
+.ah-squad-img {
+	height: 19rem;
+	background-color: #393535;
+	border-radius: 0.8rem;
+}
+
+.ah-squad-info {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	padding: 0;
+	margin-top: 4.7rem;
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-size: 1.87rem;
+	font-weight: 300;
+	line-height: 2.28rem;
+	text-align: justify;
+	color: #FFFFFF;
+}
+
+.ah-squad-info_left {
 	padding-right: 2.3rem;
 }
 
-.at-squad-unit-rt {
+.ah-squad-info_left ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+.ah-squad-info_right {
 	border-left: 5px solid #ffd600;
 	padding-left: 2.3rem;
 }
 
-/* -- прибирає значки списку -- */
-.ah-lst-tp_n {
+.ah-squad-info_right ul {
 	list-style-type: none;
-}
-
-/* -- вирівнювання тексту по лівому краю -- */
-.ah-txt-algn_lt {
 	text-align: left;
 }
 
-/* -- вирівнювання тексту по правому краю -- */
-.ah-txt-algn_rt {
-	text-align: right;
+@media (max-width: 769px) {
+
+	.ah-squad {
+		max-width: 98%;
+		margin: 3rem auto;
+	}
+
+	.ah-squad-info {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		margin-top: 3rem;
+	}
+
+	.ah-squad-info_left {
+		padding-left: 1rem;
+		text-align: left;
+	}
+
+	.ah-squad-info_right ul,
+	.ah-squad-info_left ul {
+		text-align: left;
+	}
+
+	.ah-squad-info_right {
+		border-left: unset;
+		padding-left: 1rem;
+	}
+
 }
 
-/* -- колір тексту білий -- */
-.ah-clr_w {
-	color: #ffffff;
+@media only screen
+and (min-device-width: 770px)
+and (max-device-width: 1100px) {
+
+	.ah-squad {
+		max-width: 95%;
+	}
+
+	.ah-squad-info_left {
+		padding-right: 2rem;
+	}
+
+	.ah-squad-info_right {
+		border-left: 5px solid #ffd600;
+		padding-left: 2rem;
+	}
+
 }
 
 /*===================СТИЛІ ПРОПОНУЄМОЇ БІБЛІОТЕКИ====================*/
