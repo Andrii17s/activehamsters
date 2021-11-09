@@ -142,3 +142,18 @@
 .container .table-5 .ah-cell_v1 {
   background-color: #FFD600;
 }
+@media only screen and (max-width: 780px){
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   
+    
+    grid-template-areas:
+      "table-1"
+      "table-2"
+      "table-3"
+      "table-4"
+      "table-5";
+  }
+}
